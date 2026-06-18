@@ -388,43 +388,63 @@
     },
     {
       "source": "/capital-structuring",
-      "destination": "/projects/capital-structuring.html"
+      "destination": "/capital-structuring/capital-structuring-overview.html"
     },
     {
       "source": "/capital-structuring/10m-20m",
-      "destination": "/projects/capital-structuring-10m.html"
+      "destination": "/capital-structuring/capital-structuring-10m.html"
     },
     {
       "source": "/capital-structuring/20m-50m",
-      "destination": "/projects/capital-structuring-20m.html"
+      "destination": "/capital-structuring/capital-structuring-20m.html"
     },
     {
       "source": "/capital-structuring/50m-100m",
-      "destination": "/projects/capital-structuring-50m.html"
+      "destination": "/capital-structuring/capital-structuring-50m.html"
     },
     {
       "source": "/capital-structuring/100m-plus",
-      "destination": "/projects/capital-structuring-100m.html"
+      "destination": "/capital-structuring/capital-structuring-100m.html"
+    },
+    {
+      "source": "/capital-structuring/overview",
+      "destination": "/capital-structuring/capital-structuring-overview.html"
+    },
+    {
+      "source": "/capital-structuring/10m",
+      "destination": "/capital-structuring/capital-structuring-10m.html"
+    },
+    {
+      "source": "/capital-structuring/20m",
+      "destination": "/capital-structuring/capital-structuring-20m.html"
+    },
+    {
+      "source": "/capital-structuring/50m",
+      "destination": "/capital-structuring/capital-structuring-50m.html"
+    },
+    {
+      "source": "/capital-structuring/100m",
+      "destination": "/capital-structuring/capital-structuring-100m.html"
     },
     {
       "source": "/projects/capital-structuring",
-      "destination": "/projects/capital-structuring.html"
+      "destination": "/capital-structuring/capital-structuring-overview.html"
     },
     {
       "source": "/projects/capital-structuring-10m",
-      "destination": "/projects/capital-structuring-10m.html"
+      "destination": "/capital-structuring/capital-structuring-10m.html"
     },
     {
       "source": "/projects/capital-structuring-20m",
-      "destination": "/projects/capital-structuring-20m.html"
+      "destination": "/capital-structuring/capital-structuring-20m.html"
     },
     {
       "source": "/projects/capital-structuring-50m",
-      "destination": "/projects/capital-structuring-50m.html"
+      "destination": "/capital-structuring/capital-structuring-50m.html"
     },
     {
       "source": "/projects/capital-structuring-100m",
-      "destination": "/projects/capital-structuring-100m.html"
+      "destination": "/capital-structuring/capital-structuring-100m.html"
     },
     {
       "source": "/v-capital-portfolio",
