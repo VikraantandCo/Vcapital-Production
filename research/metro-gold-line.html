@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <!-- ═══ V Capital Favicon System ═══ -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#000000">
+  <!-- ════════════════════════════════════ -->
+<style id="fonts-local">
+/* Cormorant Garamond — self-hosted */
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-300italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-400italic.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-500italic.woff2') format('woff2');font-weight:500;font-style:italic;font-display:swap}
+/* DM Sans — self-hosted */
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+/* DM Mono — self-hosted */
+@font-face{font-family:'DM Mono';src:url('/fonts/dm-mono-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Mono';src:url('/fonts/dm-mono-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+</style>
+<script>
+/* Non-blocking Google Fonts fallback — fires after page load,
+   only if local fonts aren't found (file not uploaded yet) */
+(function(){
+  var l=document.createElement('link');
+  l.rel='stylesheet';
+  l.media='print';
+  l.href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap';
+  l.onload=function(){this.media='all';};
+  document.head.appendChild(l);
+})();
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dubai Metro Gold Line: Property Impact 2026 | V Capital</title>
+<meta name="description" content="Dubai Metro Gold Line — 18 stations, community price impact, STR/LTR analysis by corridor, AED 34B investment. V Capital.">
+<link rel="canonical" href="https://vcapital.ae/dubai-metro-gold-line-property-analysis">
+<meta property="og:title" content="Dubai Metro Gold Line: Property Intelligence 2026 | V Capital">
+<meta property="og:image" content="https://vcapital.ae/og-image.jpg">
+<meta property="og:image:width" content="780"><meta property="og:image:height" content="975">
+<meta property="og:type" content="article">
+
+
+<style>
+:root{--ob:#080808;--ob1:#0f0f0f;--chalk:#F5F2EC;--gold:#C9A847;--border:rgba(255,255,255,.06);--border2:rgba(255,255,255,.04);--chalk2:rgba(245,242,236,.6);--chalk3:rgba(245,242,236,.28);--fm:'DM Mono',monospace;--fd:'Cormorant Garamond',Georgia,serif;--fb:'DM Sans',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ob);color:var(--chalk);font-family:var(--fb);font-weight:300;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.c{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+/* Nav */
+.rn{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(8,8,8,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.rn-i{display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;height:60px;max-width:1200px;margin:0 auto}
+.rn-logo{font-family:var(--fd);font-size:1.15rem;font-weight:400;color:var(--chalk)}
+.rn-logo span{color:var(--gold)}
+.rn-ul{display:flex;align-items:center;list-style:none;gap:0}
+.rn-ul li a,.rn-ul li button{padding:6px 10px;font-family:var(--fm);font-size:.55rem;letter-spacing:.09em;text-transform:uppercase;color:rgba(245,242,236,.85);background:none;border:none;cursor:pointer;transition:color .2s;white-space:nowrap}
+.rn-ul li a:hover,.rn-ul li button:hover{color:#fff}
+.rn-dd{position:relative}
+.rn-dd-m{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#0f0f0f;border:1px solid var(--border);min-width:220px;z-index:999;padding:.5rem 0}
+.rn-dd:hover .rn-dd-m{display:block}
+.rn-dd-lbl{display:block;font-family:var(--fm);font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,168,71,.5);padding:8px 14px 4px}
+.rn-dd-m a{display:block;padding:7px 14px;font-family:var(--fm);font-size:.52rem;letter-spacing:.07em;color:rgba(245,242,236,.6);transition:all .18s;white-space:nowrap}
+.rn-dd-m a:hover{background:rgba(201,168,71,.06);color:var(--gold)}
+.rn-ham{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.rn-ham span{display:block;width:22px;height:1.5px;background:rgba(245,242,236,.85)}
+.rn-mob{display:none;position:fixed;inset:0;background:rgba(8,8,8,.97);z-index:890;overflow-y:auto;padding:80px 1.5rem 2rem}
+.rn-mob.open{display:block}
+.rn-mob-a{display:block;padding:.875rem 0;font-family:var(--fm);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.75);border-bottom:1px solid var(--border)}
+.rn-mob-a:hover{color:var(--gold)}
+.rn-mob-lbl{display:block;font-family:var(--fm);font-size:.46rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,71,.5);margin:1.25rem 0 .5rem}
+.rn-mob-sub{display:block;padding:.6rem .75rem;font-family:var(--fm);font-size:.54rem;letter-spacing:.07em;color:rgba(245,242,236,.5);border-bottom:1px solid var(--border2)}
+.rn-mob-sub:hover{color:var(--gold)}
+@media(max-width:900px){.rn-ul{display:none}.rn-ham{display:flex}}
+/* Hero */
+.art-hero{position:relative;overflow:hidden;padding:8rem 0 5rem;background-size:cover;background-position:center 40%;background-repeat:no-repeat}
+.art-hero::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to right,rgba(8,8,8,.92) 0%,rgba(8,8,8,.80) 50%,rgba(8,8,8,.48) 100%)}
+.art-hero .c{position:relative;z-index:2}
+.art-eyebrow{font-family:var(--fm);font-size:.5rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(201,168,71,.75);display:block;margin-bottom:1rem}
+.art-hero h1{font-family:var(--fd);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:300;color:#fff;line-height:1.1;margin-bottom:1rem}
+.art-hero h1 em{font-style:italic;color:var(--gold)}
+.art-meta{font-family:var(--fm);font-size:.49rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.32);margin-bottom:1.75rem;line-height:2}
+.art-lead{font-family:var(--fd);font-size:1.2rem;font-weight:300;color:rgba(245,242,236,.82);line-height:1.78;max-width:640px;margin-bottom:2.5rem}
+/* Stats */
+.hs-row{display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:2.5rem}
+.hs{flex:1;min-width:120px;border-left:1px solid rgba(201,168,71,.2);padding-left:1rem}
+.hs-val{font-family:var(--fd);font-size:clamp(1.4rem,3vw,2rem);font-weight:300;color:var(--gold);line-height:1}
+.hs-lbl{font-family:var(--fm);font-size:.45rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,242,236,.35);margin-top:.4rem;line-height:1.55}
+/* Sections */
+.section{padding:4.5rem 0;border-top:1px solid var(--border)}
+.sl{font-family:var(--fm);font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(201,168,71,.7);display:block;margin-bottom:.875rem}
+.section h2{font-family:var(--fd);font-size:clamp(1.6rem,3vw,2.3rem);font-weight:300;color:var(--chalk);line-height:1.2;margin-bottom:1.25rem}
+.section h2 em{font-style:italic;color:var(--gold)}
+.section h3{font-family:var(--fm);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(201,168,71,.8);margin:2rem 0 .75rem}
+.section p{font-size:.9625rem;color:rgba(245,242,236,.7);line-height:1.88;margin-bottom:1.25rem}
+.section p strong{color:rgba(245,242,236,.9);font-weight:500}
+.pq{border-left:3px solid var(--gold);padding:1.25rem 1.5rem;margin:2rem 0;background:rgba(201,168,71,.04)}
+.pq p{font-family:var(--fd);font-size:1.15rem;font-weight:300;font-style:italic;color:rgba(245,242,236,.82);margin:0;line-height:1.65}
+.pq cite{display:block;font-family:var(--fm);font-size:.46rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(201,168,71,.55);margin-top:.75rem;font-style:normal}
+.dt{width:100%;border-collapse:collapse;font-size:.875rem;margin:1.5rem 0}
+.dt th{font-family:var(--fm);font-size:.47rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(245,242,236,.32);padding:.75rem 1rem;text-align:left;border-bottom:1px solid var(--border);background:rgba(255,255,255,.02)}
+.dt td{padding:.75rem 1rem;border-bottom:1px solid var(--border2);color:rgba(245,242,236,.65);vertical-align:top}
+.dt td.g{color:var(--gold)}
+.dt tr:hover td{background:rgba(201,168,71,.02)}
+.dt-src{font-family:var(--fm);font-size:.43rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.18);margin-top:.5rem;line-height:1.7}
+.tl-item{display:grid;grid-template-columns:100px 1fr;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--border2)}
+.tl-yr{font-family:var(--fd);font-size:1.5rem;font-weight:300;color:var(--gold);line-height:1}
+.tl-body h4{font-family:var(--fm);font-size:.57rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.7);margin-bottom:.5rem}
+.tl-body p{font-size:.9rem;color:rgba(245,242,236,.55);line-height:1.75;margin:0}
+.risk-box{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:1.5rem;margin:2rem 0}
+.risk-box ul{padding-left:1.25rem}
+.risk-box li{font-size:.9375rem;color:rgba(245,242,236,.58);line-height:1.85;padding:.25rem 0}
+.art-cta{background:rgba(201,168,71,.06);border-top:1px solid rgba(201,168,71,.15);border-bottom:1px solid rgba(201,168,71,.15);padding:3rem 0;text-align:center}
+.btn-gold{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:linear-gradient(135deg,#9A7A28,#C9A847);color:#080808;font-family:var(--fm);font-size:.57rem;letter-spacing:.14em;text-transform:uppercase;border:none;cursor:pointer}
+.disclaimer{font-family:var(--fm);font-size:.43rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.18);line-height:1.8;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)}
+footer{padding:3rem 0;border-top:1px solid var(--border)}
+@media(max-width:768px){.art-hero{padding:7rem 0 4rem}.tl-item{grid-template-columns:70px 1fr}.hs-row{gap:1.25rem}}
+</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Dubai Metro Gold Line?", "acceptedAnswer": {"@type": "Answer", "text": "The Dubai Metro Gold Line is a AED 34 billion, 42-kilometre fully underground metro line approved by Sheikh Mohammed on April 22, 2026. It connects Al Ghubaiba to Jumeirah Golf Estates via 18 stations across 15 strategic areas. Opening is scheduled for September 9, 2032."}}, {"@type": "Question", "name": "Which communities does the Dubai Metro Gold Line serve?", "acceptedAnswer": {"@type": "Answer", "text": "The Gold Line serves Al Ghubaiba, Al Mina Street, Al Satwa, City Walk, Business Bay, MBR City District One, Nad Al Sheba, Dubai Hills Estate, Global Village, Meydan, Dubai Miracle Garden, Jumeirah Village Circle, Dubai Production City, and Jumeirah Golf Estates, among others."}}, {"@type": "Question", "name": "How will the Gold Line affect property prices?", "acceptedAnswer": {"@type": "Answer", "text": "Based on historical Dubai Metro expansions, properties within 500m of new stations have appreciated 20–30% above the citywide average within 36 months of announcement. For the Gold Line, analysts project 15–22% appreciation in JVC, Meydan, Arjan, and MBR City between 2026 and 2028."}}, {"@type": "Question", "name": "When does the Dubai Gold Line Metro open?", "acceptedAnswer": {"@type": "Answer", "text": "The Dubai Metro Gold Line is scheduled to open on September 9, 2032. Construction is expected to commence in 2027 following contract awards, with tunnel boring machines operating at depths of up to 40 metres."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Dubai Metro Gold Line: Property Intelligence 2026", "description": "Dubai Metro Gold Line — 18 stations, community price impact, STR/LTR analysis by corridor.", "publisher": {"@type": "Organization", "name": "V Capital", "url": "https://vcapital.ae"}, "author": {"@type": "Person", "name": "Vikraant K Parcha"}, "datePublished": "2026-06-01", "dateModified": "2026-06-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://vcapital.ae/dubai-metro-gold-line-property-analysis"}}</script>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://vcapital.ae"}, {"@type": "ListItem", "position": 2, "name": "Market Intelligence", "item": "https://vcapital.ae/#intelligence"}, {"@type": "ListItem", "position": 3, "name": "Dubai Metro Gold Line: Property Intelligence 2026", "item": "https://vcapital.ae/dubai-metro-gold-line-property-analysis"}]}</script>
+<style id="vc-citations-css">
+/* V Capital citation layer — matches existing design, adds no visual weight */
+.vc-src{
+  font-family:var(--font-mono,'DM Mono',monospace);
+  font-size:.48rem;letter-spacing:.08em;text-transform:uppercase;
+  color:rgba(245,242,236,.28);margin-top:.875rem;padding-top:.625rem;
+  border-top:1px solid rgba(255,255,255,.05);line-height:1.8;
+}
+.vc-src a{color:rgba(201,168,71,.5);text-decoration:none;}
+.vc-src a:hover{color:var(--gold,#C9A847);}
+.vc-fn{
+  font-family:var(--font-mono,'DM Mono',monospace);
+  font-size:.46rem;letter-spacing:.06em;color:rgba(245,242,236,.22);
+  margin-top:.75rem;line-height:1.9;
+}
+.vc-fn sup{color:rgba(201,168,71,.55);}
+.vc-disclaimer{
+  background:rgba(255,255,255,.02);
+  border-top:1px solid rgba(255,255,255,.06);
+  padding:2.5rem 0;margin-top:0;
+}
+.vc-disclaimer .c{max-width:1000px;margin:0 auto;padding:0 2rem;}
+.vc-disc-label{
+  font-family:var(--font-mono,'DM Mono',monospace);
+  font-size:.46rem;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(201,168,71,.55);display:block;margin-bottom:1rem;
+}
+.vc-disc-body{
+  font-size:.78rem;color:rgba(245,242,236,.28);
+  line-height:1.85;max-width:820px;
+}
+.vc-disc-body a{color:rgba(201,168,71,.45);text-decoration:none;}
+.vc-disc-body a:hover{color:#C9A847;}
+.vc-chart-src{
+  font-family:var(--font-mono,'DM Mono',monospace);
+  font-size:.44rem;letter-spacing:.07em;
+  color:rgba(245,242,236,.2);margin-top:.5rem;
+}
+</style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6BT42076R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z6BT42076R');
+  </script>
+</head>
+<body>
+<nav class="rn">
+  <div class="rn-i">
+    <a href="/" class="rn-logo">V<span>Capital</span></a>
+    <ul class="rn-ul">
+      <li><a href="/#intelligence">Market Intel</a></li>
+      <li><a href="/#capital-flow">Capital Flow</a></li>
+      <li><a href="/#hotspots">Hotspots</a></li>
+      <li><a href="/#opportunities">Live Deals</a></li>
+      <li><a href="/investment-guide">Invest. Guide</a></li>
+      <li class="rn-dd"><button>Cap. Preservation &#9662;</button>
+        <div class="rn-dd-m">
+          <span class="rn-dd-lbl">Capital Preservation</span>
+          <a href="/emirates-hills-investment">Emirates Hills</a>
+          <a href="/palm-jumeirah-investment">Palm Jumeirah</a>
+          <a href="/palm-jebel-ali-investment">Palm Jebel Ali</a>
+          <a href="/jumeirah-bay-island-investment">Jumeirah Bay Island</a>
+          <a href="/pearl-jumeirah-investment">Pearl Jumeirah</a>
+          <a href="/grand-polo-club-investment">Grand Polo Club</a>
+          <a href="/the-oasis-emaar-investment">The Oasis</a>
+          <a href="/bluewaters-island-investment">Bluewaters Island</a>
+          <a href="/the-heights-emaar-investment">The Heights</a>
+        </div>
+      </li>
+      <li class="rn-dd"><button>Invest. Zones &#9662;</button>
+        <div class="rn-dd-m">
+          <span class="rn-dd-lbl">Investment Zones</span>
+          <a href="/jvc-investment">JVC</a>
+          <a href="/business-bay-investment">Business Bay</a>
+          <a href="/dubai-marina-investment">Dubai Marina</a>
+          <a href="/dubai-south-investment">Dubai South</a>
+          <a href="/dubai-creek-harbour-investment">Creek Harbour</a>
+          <a href="/dubai-islands-investment">Dubai Islands</a>
+          <a href="/tilal-al-ghaf-investment">Tilal Al Ghaf</a>
+        </div>
+      </li>
+      <li><a href="/#strategy">Strategy</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+    <button class="rn-ham" onclick="document.getElementById('rnMob').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div id="rnMob" class="rn-mob">
+  <a class="rn-mob-a" href="/" onclick="document.getElementById('rnMob').classList.remove('open')">Home</a>
+  <a class="rn-mob-a" href="/#intelligence" onclick="document.getElementById('rnMob').classList.remove('open')">Market Intel</a>
+  <a class="rn-mob-a" href="/#hotspots" onclick="document.getElementById('rnMob').classList.remove('open')">Hotspots</a>
+  <a class="rn-mob-a" href="/#opportunities" onclick="document.getElementById('rnMob').classList.remove('open')">Live Deals</a>
+  <a class="rn-mob-a" href="/investment-guide" onclick="document.getElementById('rnMob').classList.remove('open')">Investment Guide</a>
+  <span class="rn-mob-lbl">Research</span>
+  <a class="rn-mob-sub" href="/dubai-south-upside-analysis">Dubai South Upside</a>
+  <a class="rn-mob-sub" href="/dubai-metro-gold-line-property-analysis">Metro Gold Line</a>
+  <a class="rn-mob-sub" href="/uae-visa-rules-investment-guide">UAE Visa Rules</a>
+  <span class="rn-mob-lbl">Capital Preservation</span>
+  <a class="rn-mob-sub" href="/emirates-hills-investment">Emirates Hills</a>
+  <a class="rn-mob-sub" href="/palm-jumeirah-investment">Palm Jumeirah</a>
+  <a class="rn-mob-sub" href="/palm-jebel-ali-investment">Palm Jebel Ali</a>
+  <span class="rn-mob-lbl">Investment Zones</span>
+  <a class="rn-mob-sub" href="/jvc-investment">JVC</a>
+  <a class="rn-mob-sub" href="/business-bay-investment">Business Bay</a>
+  <a class="rn-mob-sub" href="/dubai-south-investment">Dubai South</a>
+  <a class="rn-mob-a" href="/#contact" onclick="document.getElementById('rnMob').classList.remove('open')" style="margin-top:1rem">Contact</a>
+</div>
+
+
+<!-- HERO -->
+<section class="art-hero" >
+  <div class="c">
+    <span class="art-eyebrow">Investment Research &middot; Market Intelligence &middot; V Capital &middot; June 2026</span>
+    <h1>Dubai Metro Gold Line<br><em>Property Intelligence 2026</em></h1>
+    <p class="art-meta">Published June 2026 &middot; /p>
+    <p class="art-lead">On 22 April 2026, Sheikh Mohammed approved the AED 34 billion Dubai Metro Gold Line — 42km, fully underground, 18 stations, opening September 9, 2032. Every previous Metro expansion preceded measurable price appreciation. This is where that appreciation will land, and by how much.</p>
+    <div class="hs-row">
+      <div class="hs"><div class="hs-val">AED 34B</div><div class="hs-lbl">Total Investment — Largest Transport Project in Dubai History</div></div>
+      <div class="hs"><div class="hs-val">42km</div><div class="hs-lbl">Fully Underground — First of Its Kind in UAE</div></div>
+      <div class="hs"><div class="hs-val">18</div><div class="hs-lbl">Stations Across 15 Strategic Areas &middot; 1.5M Residents Served</div></div>
+      <div class="hs"><div class="hs-val">Sept 2032</div><div class="hs-lbl">Target Opening Date</div></div>
+    </div>
+  
+<div class="vc-src">Source: Dubai Land Department (DLD) transaction records &nbsp;·&nbsp; DXBinteract market analytics &nbsp;·&nbsp; Knight Frank luxury research &nbsp;·&nbsp; Bloomberg market intelligence &nbsp;·&nbsp; <a href="/research-methodology">VP Capital Methodology</a></div></div>
+</section>
+
+<div class="c">
+
+<section class="section">
+<h2>What Was Approved — <em>The Official Facts</em></h2>
+<p><strong>Announced:</strong> April 22, 2026 by H.H. Sheikh Mohammed bin Rashid Al Maktoum. <strong>Cost:</strong> AED 34 billion ($9.2B). <strong>Length:</strong> 42km, entirely underground — the first fully underground metro line in the UAE. <strong>Stations:</strong> 18 stations across 15 strategic areas. <strong>Opening:</strong> September 9, 2032. The Gold Line expands the Metro network from 120km to 162km — a 35% increase — with interchanges connecting the Green Line at Al Ghubaiba, the Red Line at Business Bay and Jumeirah Golf Estates, and Etihad Rail at Meydan and Jumeirah Golf Estates.</p>
+
+<div class="pq">
+  <p>"The Gold Line is projected to carry 465,000 passengers daily by 2040, with cumulative economic returns over 20 years estimated at up to 430 per cent."</p>
+  
+</div>
+</section>
+
+<section class="section">
+<h2>Full Route — <em>Al Ghubaiba to Jumeirah Golf Estates</em></h2>
+<p>The line runs from Al Ghubaiba in historic Bur Dubai southwest through the city's busiest residential and investment corridors. Station names are not yet officially confirmed by RTA (June 2026), but the route map identifies the following communities:</p>
+
+<div style="margin:2rem 0">
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Al Ghubaiba<span style="display:inline-block;font-family:'DM Mono',monospace;font-size:.41rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;background:rgba(201,168,71,.12);color:#C9A847;margin-left:.5rem;vertical-align:middle">Green Line Interchange &amp; Etihad Rail</span></div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Bur Dubai &middot; Terminal Station</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Triple-modal terminal — Green Line metro, Dubai Ferry, and Etihad Rail national rail connection. Anchors the Gold Line in historic Dubai and activates the full Deira waterfront tourist circuit.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Al Mina Street</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Port Saeed &middot; Deira Waterfront</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">First in-line station after Al Ghubaiba, serving the port and waterfront residential district. Activates demand for Deira Islands residential communities and maritime district F&B workers.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Al Satwa (near Satwa Bus Station)</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Al Satwa &middot; Bus Network Interchange</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Major bus network interchange point. Al Satwa serves a dense residential population of 80,000+ residents who are currently entirely car or bus dependent. Metro access immediately lifts rental demand and landlord pricing power.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Al Satwa Road</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Al Satwa Road Corridor</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Second Al Satwa station serving the eastern Satwa corridor. Dual-station coverage across the district reduces walking distance, improving commuter uptake and residential demand across the full Satwa catchment.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">City Walk</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Jumeirah 1 &middot; Retail &amp; Lifestyle</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Direct metro access to City Walk — Dubai's premier urban lifestyle retail destination with 200+ F&B and retail outlets. Rental premium on City Walk and adjacent Jumeirah 1 apartments projected +12–18%.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Business Bay<span style="display:inline-block;font-family:'DM Mono',monospace;font-size:.41rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;background:rgba(201,168,71,.12);color:#C9A847;margin-left:.5rem;vertical-align:middle">Red Line Interchange</span></div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Business Bay &middot; DIFC Corridor</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Second metro connection for Business Bay — reinforcing its position as Dubai's best-connected commercial district. Already trading at AED 2,615/sqft; dual metro access sustains the premium against competing areas gaining first access.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Burj Khalifa Road</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Downtown Dubai Approach</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Serves the southern Downtown approach corridor — Emaar Boulevard, Fountain Views, and the Address hotels. Effectively extends metro coverage into the heart of Downtown without adding a full Downtown station, reducing platform congestion.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">District 1 (MBR City)</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Mohammed Bin Rashid City &middot; Crystal Lagoon</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">First-ever metro station for MBR City — District One, District One West, and Sobha Hartland. The 16km crystal lagoon communities gain metro connectivity. Analysts project 15–22% appreciation in MBR City within 500m of the station.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">District 1 (High-Speed Rail line)<span style="display:inline-block;font-family:'DM Mono',monospace;font-size:.41rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;background:rgba(201,168,71,.12);color:#C9A847;margin-left:.5rem;vertical-align:middle">High-Speed Rail</span></div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">MBR City &middot; National Rail Interchange</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">A high-speed rail interchange within MBR City — connecting the Gold Line to UAE inter-city rail. Abu Dhabi–Dubai commuters and GCC visitors exit here for MBR City's luxury residential addresses. This interchange makes District One a national transit hub, not just a Dubai address.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Nad Al Sheba</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Nad Al Sheba &middot; Equestrian District</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">First metro access to the Nad Al Sheba equestrian corridor. Nad Al Sheba Gardens (Emaar) and the Nad Al Sheba racecourse community gain connectivity. Race and equestrian event days will drive STR demand once the line opens.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Dubai Hills</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Dubai Hills Estate &middot; Emaar</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Dubai Hills Estate gains its first metro station — removing the single largest livability objection for car-free tenants. AED 2,180/sqft community with hospital, golf, and mall already in place. Metro closes the connectivity gap to Business Bay.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Global Village</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Global Village &middot; Tourism &amp; Retail</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Global Village — Dubai's largest seasonal cultural and retail destination (5M+ annual visitors) — gains permanent metro access. STR demand in the surrounding Dubailand corridor activates during Global Village season (October–April).</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Meydan / Future Etihad Rail Interchange<span style="display:inline-block;font-family:'DM Mono',monospace;font-size:.41rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;background:rgba(201,168,71,.12);color:#C9A847;margin-left:.5rem;vertical-align:middle">Future Etihad Rail</span></div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Meydan &middot; Racecourse &amp; Business</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Meydan's first-ever metro station with a future Etihad Rail interchange planned. Binghatti's Mercedes-Benz City (13,000+ units under development) directly benefits. Analysts describe Meydan as the highest-impact new station on the entire Gold Line for residential appreciation.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Hadaeq Mohammed Bin Rashid</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Mohammed Bin Rashid Gardens &middot; Al Barsha South</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Serves the Mohammed Bin Rashid Gardens master community and Al Barsha South parkland corridor. Bridges metro coverage between the Meydan commercial zone and the Dubailand leisure corridor.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Dubai Miracle Garden</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Miracle Garden &middot; Al Barsha South</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Dubai Miracle Garden — one of Dubai's top 5 tourist attractions with 2M+ annual visitors — gains its first direct metro access. Arjan and Al Barsha South apartments gain tourist circuit connectivity. STR viability in the corridor improves significantly.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Jumeirah Village Circle (JVC)</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">JVC &middot; JVT Corridor</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">JVC gets metro. 1,700+ monthly DLD transactions and 7.39% gross yield — now with metro access closing the only gap vs Business Bay. The JVC–Business Bay price per sqft gap (AED 1,238 vs AED 2,615) will compress materially by 2032 opening.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Dubai Production City</div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">Production City &middot; IMPZ</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Dubai Production City (IMPZ) gains metro connectivity — activating residential demand from the media, printing, and publishing professional community. A captive professional tenant base previously entirely car-dependent.</div></div></div>
+<div style="display:grid;grid-template-columns:32px 1fr;gap:1rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,.04);align-items:start"><div style="width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #C9A847;margin-top:.35rem;flex-shrink:0"></div><div><div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.05rem;font-weight:400;color:#F5F2EC;margin-bottom:.25rem">Jumeirah Golf Estates<span style="display:inline-block;font-family:'DM Mono',monospace;font-size:.41rem;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;background:rgba(201,168,71,.12);color:#C9A847;margin-left:.5rem;vertical-align:middle">Red Line &amp; Etihad Rail Interchange</span></div><div style="font-family:'DM Mono',monospace;font-size:.46rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.28)">JGE &middot; Terminal Station</div><div style="font-size:.875rem;color:rgba(245,242,236,.52);margin-top:.375rem;line-height:1.65">Triple-modal terminal — Gold Line, Red Line metro, and Etihad Rail national rail. Dubai–Abu Dhabi intercity passengers arrive here. JGE becomes the transit hub for southwestern Dubai. Abu Dhabi commuter demand for JGE residential is immediate upon Etihad Rail launch.</div></div></div>
+</div>
+</section>
+
+<section class="section">
+<h2>Historical Precedent — <em>Metro Impact on Property Prices</em></h2>
+<table class="dt">
+<thead><tr><th>Metro Event</th><th>Community</th><th>Price Appreciation</th><th>Timeframe</th></tr></thead>
+<tbody>
+<tr><td>Red Line Launch (2009)</td><td>Dubai Marina</td><td class="g">+31% within 36 months</td><td>2009–2012</td></tr>
+<tr><td>Green Line Launch (2011)</td><td>Al Qusais</td><td class="g">+18% within 24 months</td><td>2011–2013</td></tr>
+<tr><td>Route 2020 (2021)</td><td>Dubai South / Expo</td><td class="g">+24% within 18 months</td><td>2021–2023</td></tr>
+<tr><td>Blue Line Announced (2024)</td><td>Silicon Oasis</td><td class="g">+29% in 2025 (DLD)</td><td>2024–2025</td></tr>
+<tr><td>Gold Line Announced (Apr 2026)</td><td>JVC, Meydan, Arjan</td><td class="g">+15–22% forecast 2026–28</td><td>Sherwoods Apr 2026</td></tr>
+</tbody>
+</table>
+<p class="dt-src">/p>
+<p>Properties within 500m of a new station have appreciated <strong>20–30% above the Dubai citywide average</strong> within 36 months of announcement across all five expansion events. The Gold Line pattern is expected to follow.</p>
+</section>
+
+<section class="section">
+<h2>STR vs LTR — <em>Gold Line Corridor Strategy</em></h2>
+<p><strong>Long-term rental is the primary strategy</strong> for Gold Line corridor properties. The tenant base the Gold Line creates — Abu Dhabi commuters via Etihad Rail, Meydan corporate tenants, JVC professionals previously requiring car ownership — are stable 1–3 year residents, not tourists. The Gold Line removes the connectivity barrier suppressing LTR demand in car-dependent communities; it does not create new STR demand.</p>
+<p><strong>Where STR improves:</strong> Arjan and Al Barsha South units near Miracle Garden gain tourist circuit connectivity. STR premiums of 25–40% above LTR are achievable within 500m of the Miracle Garden station during peak spring season (February–April). City Walk units gain year-round STR demand from retail-tourism connectivity.</p>
+
+<div class="risk-box">
+<ul>
+<li><strong>2032 timeline — patience required:</strong> Properties acquired for Gold Line appreciation in 2026 are 6 years from the opening premium. The investment case requires a minimum 7-year horizon.</li>
+<li><strong>Announcement vs delivery discount:</strong> 60–70% of total Metro-adjacent appreciation typically occurs in the 12–24 months after opening, not after announcement. Some announcement premium is already priced in.</li>
+<li><strong>Station location uncertainty:</strong> RTA has released a route map but not confirmed exact station entry points. Evaluate within the confirmed corridor, not by projected station exits.</li>
+<li><strong>Off-plan supply risk:</strong> Gold Line announcement has accelerated developer launches in JVC, Arjan, and Meydan. Supply additions may compress short-term rental yields before the line opens.</li>
+</ul>
+</div>
+</section>
+
+</div>
+
+<div class="vc-disclaimer">
+  <div class="c">
+    <span class="vc-disc-label">Research Methodology</span>
+    <p class="vc-disc-body">VP Capital research incorporates transaction data from the Dubai Land Department (DLD), market analytics from DXBinteract, luxury real estate intelligence from Knight Frank, and macroeconomic research from Bloomberg. All investment opinions, forecasts, and conclusions represent VP Capital's independent analysis unless explicitly attributed to a third-party source. Past performance is not indicative of future results. This content does not constitute financial or investment advice. Full methodology: <a href="/research-methodology">research-methodology</a></p>
+  </div>
+</div>
+<footer><div class="c"><p style="font-family:var(--fm);font-size:.48rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.22)">&copy; 2026 V Capital &middot; Dubai Real Estate Intelligence &middot; Not a brokerage</p></div></footer>
+</body>
+</html>
