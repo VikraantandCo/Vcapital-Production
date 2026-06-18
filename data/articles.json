@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "lastUpdated": "2026-06-18"
+  },
+  "editions": [
+    {
+      "id": "june-2026",
+      "slug": "newsroom-june-2026",
+      "title": "Dubai Real Estate Intelligence — June 2026",
+      "subtitle": "Mid-Year Review",
+      "date": "2026-06-01",
+      "volume": 3,
+      "coverStory": "H1 luxury sales surpass AED 48B. Palm Jebel Ali handovers accelerate.",
+      "topics": [
+        "H1 Review",
+        "Palm Jebel Ali",
+        "Branded Residences",
+        "H2 Outlook"
+      ],
+      "wordCount": 4800,
+      "pages": 12
+    },
+    {
+      "id": "april-2026",
+      "slug": "newsroom-april-2026",
+      "title": "Dubai Real Estate Intelligence — April 2026",
+      "subtitle": "Q2 Market Intelligence",
+      "date": "2026-04-01",
+      "volume": 2,
+      "coverStory": "Transaction volume up 18% YTD. 24 new developer launches.",
+      "topics": [
+        "Transaction Growth",
+        "New Launches",
+        "Family Offices",
+        "Foreign Investors"
+      ],
+      "wordCount": 4200,
+      "pages": 10
+    },
+    {
+      "id": "march-2026",
+      "slug": "newsroom-march-2026",
+      "title": "Dubai Real Estate Intelligence — March 2026",
+      "subtitle": "Inaugural Edition",
+      "date": "2026-03-01",
+      "volume": 1,
+      "coverStory": "DLD records AED 12.4B in Q1 transactions.",
+      "topics": [
+        "DLD Data",
+        "Wealth Migration",
+        "Golden Visa",
+        "Geopolitics"
+      ],
+      "wordCount": 5200,
+      "pages": 14
+    },
+    {
+      "id": "hormuz-effect",
+      "slug": "newsroom-hormuz-effect",
+      "title": "The Hormuz Effect: 100 Days of Conflict",
+      "subtitle": "Economic Analysis",
+      "date": "2026-06-10",
+      "type": "deep-dive",
+      "coverStory": "How extended Gulf disruption could reshape Dubai real estate over 24 months.",
+      "topics": [
+        "Construction Costs",
+        "Freight Markets",
+        "Scenario Analysis",
+        "Supply Chain"
+      ],
+      "wordCount": 3800,
+      "pages": 12
+    }
+  ]
+}

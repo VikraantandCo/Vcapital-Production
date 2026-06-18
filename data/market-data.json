@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "lastUpdated": "2026-06-18",
+    "sources": [
+      "DLD",
+      "DXBinteract",
+      "Knight Frank"
+    ]
+  },
+  "h1_2026": {
+    "totalTransactionValueAED": 48200000000,
+    "luxuryTransactions_10M_plus": 1840,
+    "yoyGrowth": 0.42,
+    "primeAppreciation": 0.19,
+    "goldenVisasIssued": 8400,
+    "topNationalities": [
+      "Indian",
+      "British",
+      "Russian",
+      "French",
+      "Pakistani"
+    ]
+  },
+  "primeZones": {
+    "palmJumeirah": {
+      "yoy": 0.28,
+      "entryAED": 8000000,
+      "grossYield": 0.055
+    },
+    "emiratesHills": {
+      "yoy": 0.24,
+      "entryAED": 28000000,
+      "grossYield": 0.04
+    },
+    "districtOne": {
+      "yoy": 0.22,
+      "entryAED": 8000000,
+      "grossYield": 0.065
+    },
+    "downtownDubai": {
+      "yoy": 0.16,
+      "entryAED": 2000000,
+      "grossYield": 0.06
+    },
+    "businessBay": {
+      "yoy": 0.12,
+      "entryAED": 1200000,
+      "grossYield": 0.075
+    }
+  }
+}

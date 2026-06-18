@@ -1,0 +1,118 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "lastUpdated": "2026-06-18"
+  },
+  "zones": [
+    {
+      "id": "palm-jumeirah",
+      "slug": "palm-jumeirah-investment",
+      "name": "Palm Jumeirah",
+      "type": "Ultra-Premium",
+      "strategy": "Capital Preservation",
+      "entryAED": 8000000,
+      "metrics": {
+        "yoyAppreciation": 28,
+        "grossYield": 5.5,
+        "supplyStatus": "Zero new supply",
+        "totalVillas": 1500,
+        "minEntry": "AED 8M+",
+        "cgt": "0%"
+      },
+      "developer": "Nakheel",
+      "tags": [
+        "trophy",
+        "waterfront",
+        "zero-supply",
+        "ultra-luxury"
+      ]
+    },
+    {
+      "id": "palm-jebel-ali",
+      "slug": "palm-jebel-ali-investment",
+      "name": "Palm Jebel Ali",
+      "type": "Ultra-Premium",
+      "strategy": "Capital Growth",
+      "entryAED": 20000000,
+      "metrics": {
+        "yoyAppreciation": 42,
+        "grossYield": 9.5,
+        "supplyStatus": "Handover 2026-2027",
+        "minEntry": "AED 20M+",
+        "cgt": "0%"
+      },
+      "developer": "Nakheel",
+      "tags": [
+        "trophy",
+        "waterfront",
+        "off-plan",
+        "ultra-luxury"
+      ]
+    },
+    {
+      "id": "jvc",
+      "slug": "jvc-investment",
+      "name": "Jumeirah Village Circle",
+      "type": "Investment Zone",
+      "strategy": "Yield",
+      "entryAED": 500000,
+      "metrics": {
+        "grossYield": 8.5,
+        "netYield": 6.8,
+        "yoyAppreciation": 12,
+        "minEntry": "AED 500K",
+        "goldenVisaEligible": true,
+        "cgt": "0%"
+      },
+      "developer": "Multiple",
+      "tags": [
+        "yield",
+        "entry-level",
+        "golden-visa"
+      ]
+    },
+    {
+      "id": "business-bay",
+      "slug": "business-bay-investment",
+      "name": "Business Bay",
+      "type": "Investment Zone",
+      "strategy": "Yield + Growth",
+      "entryAED": 1200000,
+      "metrics": {
+        "grossYield": 7.5,
+        "netYield": 5.8,
+        "yoyAppreciation": 18,
+        "minEntry": "AED 1.2M",
+        "goldenVisaEligible": true,
+        "cgt": "0%"
+      },
+      "developer": "Multiple",
+      "tags": [
+        "yield",
+        "mixed-use",
+        "central"
+      ]
+    },
+    {
+      "id": "dubai-hills-estate",
+      "slug": "dubai-hills-estate-investment",
+      "name": "Dubai Hills Estate",
+      "type": "Community",
+      "strategy": "Capital Growth",
+      "entryAED": 2500000,
+      "metrics": {
+        "grossYield": 5.5,
+        "yoyAppreciation": 19,
+        "minEntry": "AED 2.5M",
+        "cgt": "0%"
+      },
+      "developer": "Emaar",
+      "tags": [
+        "community",
+        "family",
+        "golf",
+        "emaar"
+      ]
+    }
+  ]
+}

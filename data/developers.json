@@ -1,0 +1,90 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "lastUpdated": "2026-06-18"
+  },
+  "developers": [
+    {
+      "id": "emaar",
+      "name": "Emaar Properties",
+      "type": "Listed",
+      "founded": 1997,
+      "rating": "A+",
+      "deliveryRecord": "Strong",
+      "escrowCompliance": true,
+      "activeProjects": 45,
+      "notableProjects": [
+        "Dubai Hills Estate",
+        "The Oasis",
+        "Creek Harbour",
+        "Downtown Dubai"
+      ],
+      "stockTicker": "EMAAR.DFM",
+      "vcCapitalVerdict": "Top-tier. Deepest end-user demand. Recommended for all mandates."
+    },
+    {
+      "id": "nakheel",
+      "name": "Nakheel",
+      "type": "Government",
+      "founded": 2000,
+      "rating": "A+",
+      "deliveryRecord": "Strong post-2014",
+      "escrowCompliance": true,
+      "activeProjects": 12,
+      "notableProjects": [
+        "Palm Jebel Ali",
+        "Palm Jumeirah",
+        "Jumeirah Islands"
+      ],
+      "vcCapitalVerdict": "Government-backed. Palm Jebel Ali is the highest-conviction development in Dubai 2026."
+    },
+    {
+      "id": "sobha",
+      "name": "Sobha Realty",
+      "type": "Private",
+      "founded": 1976,
+      "rating": "A",
+      "deliveryRecord": "Good",
+      "escrowCompliance": true,
+      "activeProjects": 8,
+      "notableProjects": [
+        "Sobha Hartland",
+        "Sobha Hartland 2"
+      ],
+      "vcCapitalVerdict": "Premium build quality. Best in class for villa community delivery."
+    },
+    {
+      "id": "damac",
+      "name": "DAMAC Properties",
+      "type": "Listed",
+      "founded": 2002,
+      "rating": "B+",
+      "deliveryRecord": "Variable",
+      "escrowCompliance": true,
+      "activeProjects": 30,
+      "notableProjects": [
+        "DAMAC Hills",
+        "DAMAC Hills 2",
+        "DAMAC Lagoons",
+        "Riverside"
+      ],
+      "vcCapitalVerdict": "Due diligence essential on specific project."
+    },
+    {
+      "id": "meraas",
+      "name": "Meraas",
+      "type": "Government",
+      "founded": 2007,
+      "rating": "A",
+      "deliveryRecord": "Strong",
+      "escrowCompliance": true,
+      "activeProjects": 6,
+      "notableProjects": [
+        "Bluewaters Island",
+        "City Walk",
+        "La Mer"
+      ],
+      "vcCapitalVerdict": "Government-backed lifestyle destinations with strong tourism demand."
+    }
+  ]
+}
