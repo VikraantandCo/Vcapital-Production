@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vcapital.ae/sitemap.xml
