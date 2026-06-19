@@ -144,7 +144,7 @@
     },
     {
       "source": "/palm-jumeirah-investment",
-      "destination": "/zones/palm-jumeirah.html"
+      "destination": "/palm-jumeirah-investment.html"
     },
     {
       "source": "/palm-jebel-ali-investment",
@@ -384,7 +384,7 @@
     },
     {
       "source": "/capital-structuring",
-      "destination": "/capital-structuring/capital-structuring-overview.html"
+      "destination": "/capital-structuring-overview.html"
     },
     {
       "source": "/capital-structuring/10m-20m",
@@ -452,7 +452,7 @@
     },
     {
       "source": "/portfolio",
-      "destination": "/portfolio/v-capital-portfolio.html"
+      "destination": "/v-capital-portfolio.html"
     }
   ]
 }
