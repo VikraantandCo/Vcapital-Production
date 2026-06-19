@@ -2823,3 +2823,254 @@ footer{padding-bottom:calc(2rem + env(safe-area-inset-bottom))}
       #about .about-philosophy{grid-template-columns:1fr!important}
       #about > .container > div:last-child{grid-template-columns:1fr!important;gap:40px!important}
     }
+
+/* ═══════════════════════════════════════════════════════════
+   LAYOUT REPAIR — floating .wa-btn + mobile-only classes
+   ═══════════════════════════════════════════════════════════ */
+
+/* 1. Floating WhatsApp button — position:fixed bottom-right */
+.wa-btn {
+  position: fixed;
+  bottom: 88px;           /* above sticky-cta bar on mobile */
+  right: 24px;
+  z-index: 998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #25D366;
+  box-shadow: 0 4px 16px rgba(37,211,102,.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+.wa-btn svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+.wa-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(37,211,102,.5);
+}
+
+/* 2. Hide mobile-nav classes on desktop (≥1025px)
+      These only make visual sense inside #mobileNavDrawer */
+@media (min-width: 1025px) {
+  .mob-sub-link,
+  .mob-section-label,
+  .mob-wa-btn,
+  .mob-nav-label,
+  .mob-nav-wa,
+  .mob-link,
+  .mob-nav-hd,
+  .mob-nav-close {
+    display: none !important;
+  }
+}
+
+/* 3. Inside #mobileNavDrawer — restore display for mobile elements */
+#mobileNavDrawer .mob-sub-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 0.875rem;
+  color: rgba(245,242,236,0.6);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+#mobileNavDrawer .mob-sub-link:hover {
+  color: var(--gold, #C9A847);
+}
+#mobileNavDrawer .mob-section-label,
+#mobileNavDrawer .mob-nav-label {
+  display: block;
+  padding: 14px 24px 6px;
+  font-family: var(--font-mono, 'DM Mono', monospace);
+  font-size: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(201,168,71,0.55);
+}
+#mobileNavDrawer .mob-wa-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 24px 0;
+  padding: 14px 20px;
+  background: #25D366;
+  color: #fff;
+  font-family: var(--font-mono, 'DM Mono', monospace);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+#mobileNavDrawer .mob-wa-btn:hover {
+  opacity: 0.88;
+}
+#mobileNavDrawer .mob-link {
+  display: flex;
+  align-items: center;
+  padding: 13px 24px;
+  font-family: var(--font-body, 'DM Sans', sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(245,242,236,0.85);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: color 0.15s ease;
+}
+#mobileNavDrawer .mob-link:hover {
+  color: var(--gold, #C9A847);
+}
+
+/* 4. Safety net: any .mob-* class that leaks outside the drawer
+      or overlay is hidden at all times at desktop widths */
+body > .mob-sub-link,
+body > .mob-section-label,
+body > .mob-wa-btn,
+body > .mob-nav-label,
+body > .mob-nav-wa {
+  display: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   VC-CONNECT EMBEDDED wa-btn — override floating styles
+   wa-btn is now inside #vc-connect-menu, not floating fixed.
+   ═══════════════════════════════════════════════════════════ */
+
+/* Reset any previous position:fixed rules for .wa-btn
+   when it sits inside the #vc-connect-menu flex column */
+#vc-connect-menu .wa-btn,
+#vc-connect-menu a.wa-btn {
+  position: static !important;
+  bottom: auto !important;
+  right: auto !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+
+  /* Match existing menu-item style */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  font-family: var(--font-mono, 'DM Mono', monospace);
+  font-size: 0.56rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(245, 242, 236, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* WhatsApp green for the icon, match 16px siblings */
+#vc-connect-menu .wa-btn svg {
+  width: 16px !important;
+  height: 16px !important;
+  fill: #25D366;
+  flex-shrink: 0;
+}
+
+#vc-connect-menu .wa-btn:hover {
+  color: var(--gold, #C9A847);
+  padding-left: 16px;
+}
+
+/* ── Desktop: hide mobile-only elements ──────────────────── */
+/* Consolidated rule — covers all mob-* classes at ≥1025px   */
+@media (min-width: 1025px) {
+  .mob-sub-link,
+  .mob-section-label,
+  .mob-wa-btn,
+  .mob-nav-label,
+  .mob-nav-wa,
+  .mob-link,
+  .mob-nav-hd,
+  .mob-nav-close,
+  #mobileNavDrawer,
+  #mobileNavOverlay {
+    display: none !important;
+  }
+}
+
+/* ── Mobile: restore inside the drawer ───────────────────── */
+/* These rules fire at <1025px and undo the none above        */
+@media (max-width: 1024px) {
+  #mobileNavDrawer {
+    display: flex;
+    flex-direction: column;
+  }
+  #mobileNavDrawer .mob-sub-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    font-size: 0.875rem;
+    color: rgba(245, 242, 236, 0.6);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  #mobileNavDrawer .mob-sub-link:hover {
+    color: var(--gold, #C9A847);
+  }
+  #mobileNavDrawer .mob-section-label,
+  #mobileNavDrawer .mob-nav-label {
+    display: block;
+    padding: 14px 24px 6px;
+    font-size: 0.5rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(201, 168, 71, 0.55);
+    font-family: var(--font-mono, 'DM Mono', monospace);
+  }
+  #mobileNavDrawer .mob-wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 24px;
+    padding: 14px 20px;
+    background: #25D366;
+    color: #fff;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  #mobileNavDrawer .mob-wa-btn:hover {
+    opacity: 0.88;
+  }
+  #mobileNavDrawer .mob-link {
+    display: flex;
+    align-items: center;
+    padding: 13px 24px;
+    font-size: 1rem;
+    color: rgba(245, 242, 236, 0.85);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: color 0.15s;
+  }
+  #mobileNavDrawer .mob-link:hover {
+    color: var(--gold, #C9A847);
+  }
+}
+
+/* ── Safety net: any mob-* leaking outside drawer or overlay  */
+body > .mob-sub-link,
+body > .mob-section-label,
+body > .mob-wa-btn,
+body > .mob-nav-label,
+body > .mob-nav-wa {
+  display: none !important;
+}
