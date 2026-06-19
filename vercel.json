@@ -71,10 +71,6 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/index.html"
-    },
-    {
       "source": "/how-we-work",
       "destination": "/pages/how-we-work.html"
     },
