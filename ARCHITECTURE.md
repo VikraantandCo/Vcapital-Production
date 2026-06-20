@@ -43,8 +43,8 @@
 │   ├── palm-jebel-ali-analysis.html
 │   └── ...
 │
-├── /projects/                   ← Capital structuring & project reports
-│   ├── capital-structuring.html
+├── /Capital-structuring/                   ← Capital structuring
+│   ├── capital-structuring-overview.html
 │   ├── capital-structuring-10m.html
 │   └── ...
 │
@@ -120,7 +120,7 @@ All old URLs → new file locations (handled by vercel.json rewrites):
 | `/palm-jumeirah-investment` | `/zones/palm-jumeirah.html` |
 | `/jvc-investment` | `/zones/jvc.html` |
 | `/newsroom-march-2026` | `/newsroom/march-2026.html` |
-| `/capital-structuring/10m-20m` | `/projects/capital-structuring-10m.html` |
+| `/capital-structuring/10m-20m` | `/capital-structuring/capital-structuring-10m.html` |
 | `/dubai-south-upside-analysis` | `/research/dubai-south-analysis.html` |
 
 ---
