@@ -49,7 +49,7 @@ reveals.forEach(el => observer.observe(el));
 window.addEventListener('scroll', () => {
   var _mn=document.getElementById('main-nav');if(_mn)_mn.classList.toggle('scrolled', window.scrollY > 60);
   var _sc=document.getElementById('sticky-cta');if(_sc)_sc.classList.toggle('show', window.scrollY > 600);
-});
+}, { passive: true });
 
 // ── MOBILE MENU ──
 
