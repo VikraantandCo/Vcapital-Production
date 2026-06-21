@@ -1,142 +1,210 @@
-<!-- V Capital Navigation Component
-     Include via: fetch('/components/navbar.html') or SSI
-     Or paste directly — replace [[ACTIVE]] with the current section ID
--->
-<nav id="nav" role="navigation" aria-label="Main navigation">
-<div class="c"><div class="nav-i">
+<!-- ============================================================
+  V CAPITAL — UNIVERSAL NAVBAR COMPONENT
+  Copy-paste into every page. Uses absolute paths (/) throughout.
+  Works identically from: root, /zones/, /newsroom/, /pages/,
+  /capital-structuring/, /research/, /portfolio/, /developers/,
+  /communities/, /zone-analysis/
+  ============================================================ -->
 
-  <a href="/" class="nav-logo" aria-label="V Capital — Home">V Capital<span>.</span></a>
+<header class="site-header" id="site-header">
+  <nav class="nav-container">
 
-  <ul class="nav-links" role="list">
-
-    <!-- Market Intel with dropdown -->
-    <li class="nav-dd-wrap" onmouseenter="navDD('dd-intel',true)" onmouseleave="navDD('dd-intel',false)">
-      <a href="/#intelligence" role="button" aria-haspopup="true">Market Intel</a>
-      <div class="nav-dd-menu" id="dd-intel" aria-label="Market Intelligence submenu">
-        <a href="/newsroom">Newsroom</a>
-        <a href="/newsroom-hormuz-effect">Hormuz Effect Report</a>
-        <a href="/research-methodology">Research Methodology</a>
-        <a href="/market-comparison">Dubai vs Global Markets</a>
-      </div>
-    </li>
-
-    <li><a href="/newsroom">Newsroom</a></li>
-    <li><a href="/#capital-flow">Capital Flow</a></li>
-    <li><a href="/#hotspots">Hotspots</a></li>
-    <li><a href="/#opportunities">Live Deals</a></li>
-
-    <!-- Investment Zones dropdown -->
-    <li class="nav-dd-wrap" onmouseenter="navDD('dd-zones',true)" onmouseleave="navDD('dd-zones',false)">
-      <button onclick="return false;" aria-haspopup="true" aria-expanded="false">Invest. Zones</button>
-      <div class="nav-dd-menu nav-dd-menu--wide" id="dd-zones" aria-label="Investment zones submenu">
-        <div class="nav-dd-col">
-          <span class="nav-dd-heading">Capital Preservation</span>
-          <a href="/palm-jumeirah">Palm Jumeirah</a>
-          <a href="/palm-jebel-ali">Palm Jebel Ali</a>
-          <a href="/emirates-hills">Emirates Hills</a>
-          <a href="/jumeirah-bay-island">Jumeirah Bay Island</a>
-          <a href="/grand-polo-club">Grand Polo Club</a>
-          <a href="/bluewaters">Bluewaters Island</a>
-        </div>
-        <div class="nav-dd-col">
-          <span class="nav-dd-heading">Investment Zones</span>
-          <a href="/jvc">JVC</a>
-          <a href="/business-bay">Business Bay</a>
-          <a href="/dubai-marina">Dubai Marina</a>
-          <a href="/dubai-south">Dubai South</a>
-          <a href="/creek-harbour">Creek Harbour</a>
-          <a href="/dubai-islands">Dubai Islands</a>
-          <a href="/tilal-al-ghaf">Tilal Al Ghaf</a>
-        </div>
-        <div class="nav-dd-col">
-          <span class="nav-dd-heading">Communities</span>
-          <a href="/dubai-hills-estate">Dubai Hills Estate</a>
-          <a href="/district-one">District One</a>
-          <a href="/district-one-west">District One West</a>
-          <a href="/sobha-hartland">Sobha Hartland</a>
-          <a href="/arabian-ranches-1">Arabian Ranches 1</a>
-          <a href="/arabian-ranches-2">Arabian Ranches 2</a>
-          <a href="/arabian-ranches-3">Arabian Ranches 3</a>
-        </div>
-      </div>
-    </li>
-
-    <!-- Capital Structuring dropdown -->
-    <li class="nav-dd-wrap" onmouseenter="navDD('dd-cap',true)" onmouseleave="navDD('dd-cap',false)">
-      <a href="/capital-structuring" aria-haspopup="true">Cap. Structuring</a>
-      <div class="nav-dd-menu" id="dd-cap">
-        <a href="/capital-structuring/10m">AED 10M–20M Framework</a>
-        <a href="/capital-structuring/20m">AED 20M–50M Framework</a>
-        <a href="/capital-structuring/50m">AED 50M–100M Framework</a>
-        <a href="/capital-structuring/100m">AED 100M+ Family Office</a>
-      </div>
-    </li>
-
-    <li><a href="/investment-guide">Invest. Guide</a></li>
-    <li><a href="/#strategy">Strategy</a></li>
-    <li><a href="/#contact">Contact</a></li>
-  </ul>
-
-  <!-- Desktop CTA -->
-  <a href="#" class="nav-cta-lp" onclick="openBooking();return false;">Book Consultation</a>
-
-  <!-- Hamburger -->
-  <button class="nav-hbg" id="navHbg" onclick="openMobNav()" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-
-</div></div>
-</nav>
-
-<!-- Mobile overlay -->
-<div class="nav-mob-ov" id="mobOv" onclick="closeMobNav()" aria-hidden="true"></div>
-
-<!-- Mobile drawer -->
-<div class="nav-mob-dr" id="mobDr" role="dialog" aria-modal="true" aria-label="Mobile navigation">
-  <div class="mob-dr-head">
-    <a href="/" class="nav-logo" onclick="closeMobNav()">V Capital<span>.</span></a>
-    <button onclick="closeMobNav()" aria-label="Close menu">&#10005;</button>
-  </div>
-  <nav class="mob-nav-body">
-    <ul role="list">
-      <li><a href="/#intelligence" onclick="closeMobNav()">Market Intelligence</a></li>
-      <li><a href="/newsroom" onclick="closeMobNav()">Newsroom</a></li>
-      <li><a href="/#capital-flow" onclick="closeMobNav()">Capital Flow</a></li>
-      <li><a href="/#hotspots" onclick="closeMobNav()">Hotspots</a></li>
-      <li><a href="/#opportunities" onclick="closeMobNav()">Live Deals</a></li>
-      <li>
-        <button onclick="mobAccordion('mob-zones')" class="mob-acc-btn" aria-expanded="false">
-          Investment Zones <span aria-hidden="true">+</span>
-        </button>
-        <ul id="mob-zones" class="mob-acc-body" style="max-height:0;overflow:hidden">
-          <li><a href="/palm-jumeirah" onclick="closeMobNav()">Palm Jumeirah</a></li>
-          <li><a href="/palm-jebel-ali" onclick="closeMobNav()">Palm Jebel Ali</a></li>
-          <li><a href="/emirates-hills" onclick="closeMobNav()">Emirates Hills</a></li>
-          <li><a href="/jvc" onclick="closeMobNav()">JVC</a></li>
-          <li><a href="/business-bay" onclick="closeMobNav()">Business Bay</a></li>
-          <li><a href="/dubai-marina" onclick="closeMobNav()">Dubai Marina</a></li>
-          <li><a href="/dubai-hills-estate" onclick="closeMobNav()">Dubai Hills Estate</a></li>
-          <li><a href="/district-one" onclick="closeMobNav()">District One</a></li>
-          <li><a href="/dubai-south" onclick="closeMobNav()">Dubai South</a></li>
-          <li><a href="/creek-harbour" onclick="closeMobNav()">Creek Harbour</a></li>
-        </ul>
-      </li>
-      <li>
-        <button onclick="mobAccordion('mob-cap')" class="mob-acc-btn">Cap. Structuring +</button>
-        <ul id="mob-cap" class="mob-acc-body" style="max-height:0;overflow:hidden">
-          <li><a href="/capital-structuring" onclick="closeMobNav()">Overview</a></li>
-          <li><a href="/capital-structuring/10m" onclick="closeMobNav()">AED 10M–20M</a></li>
-          <li><a href="/capital-structuring/20m" onclick="closeMobNav()">AED 20M–50M</a></li>
-          <li><a href="/capital-structuring/50m" onclick="closeMobNav()">AED 50M–100M</a></li>
-          <li><a href="/capital-structuring/100m" onclick="closeMobNav()">AED 100M+</a></li>
-        </ul>
-      </li>
-      <li><a href="/investment-guide" onclick="closeMobNav()">Investment Guide</a></li>
-      <li><a href="/#strategy" onclick="closeMobNav()">Strategy</a></li>
-      <li><a href="/#contact" onclick="closeMobNav()">Contact</a></li>
-    </ul>
-    <a class="mob-cta" href="https://wa.me/971555540762?text=Hi%20Vikraant%2C%20I%27d%20like%20to%20start%20an%20investment%20conversation." target="_blank" rel="noopener">
-      WhatsApp Vikraant &#8594;
+    <!-- LOGO -->
+    <a href="/" class="nav-logo" aria-label="V Capital — Home">
+      <span class="nav-logo__text">V Capital</span>
     </a>
-  </nav>
-</div>
+
+    <!-- DESKTOP NAV -->
+    <ul class="nav-links" role="list">
+
+      <!-- About -->
+      <li><a href="/#about" class="nav-link">About</a></li>
+
+      <!-- Services (dropdown) -->
+      <li class="nav-item--dropdown">
+        <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Services <span class="nav-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <ul class="nav-dropdown" role="list">
+          <li><a href="/how-we-work"         class="nav-dropdown__link">How We Work</a></li>
+          <li><a href="/why-advisor"         class="nav-dropdown__link">Why an Advisor</a></li>
+          <li><a href="/capital-structuring" class="nav-dropdown__link">Capital Structuring</a></li>
+          <li><a href="/investment-guide"    class="nav-dropdown__link">Investment Guide</a></li>
+          <li><a href="/risks"               class="nav-dropdown__link">Risk Framework</a></li>
+        </ul>
+      </li>
+
+      <!-- Investment Zones (dropdown) -->
+      <li class="nav-item--dropdown">
+        <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Zones <span class="nav-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <ul class="nav-dropdown nav-dropdown--wide" role="list">
+          <li><a href="/zones/palm-jumeirah"       class="nav-dropdown__link">Palm Jumeirah</a></li>
+          <li><a href="/zones/palm-jebel-ali"      class="nav-dropdown__link">Palm Jebel Ali</a></li>
+          <li><a href="/zones/dubai-marina"        class="nav-dropdown__link">Dubai Marina</a></li>
+          <li><a href="/zones/downtown-dubai"      class="nav-dropdown__link">Downtown Dubai</a></li>
+          <li><a href="/zones/business-bay"        class="nav-dropdown__link">Business Bay</a></li>
+          <li><a href="/zones/dubai-hills-estate"  class="nav-dropdown__link">Dubai Hills Estate</a></li>
+          <li><a href="/zones/emirates-hills"      class="nav-dropdown__link">Emirates Hills</a></li>
+          <li><a href="/zones/dubai-creek-harbour" class="nav-dropdown__link">Dubai Creek Harbour</a></li>
+          <li><a href="/zones/sobha-hartland"      class="nav-dropdown__link">Sobha Hartland</a></li>
+          <li><a href="/zones/dubai-south"         class="nav-dropdown__link">Dubai South</a></li>
+          <li><a href="/zones/jvc"                 class="nav-dropdown__link">JVC</a></li>
+          <li><a href="/zones/meydan"              class="nav-dropdown__link">Meydan</a></li>
+          <li><a href="/#zones"                    class="nav-dropdown__link nav-dropdown__link--all">View All 35 Zones →</a></li>
+        </ul>
+      </li>
+
+      <!-- Research (dropdown) -->
+      <li class="nav-item--dropdown">
+        <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Research <span class="nav-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <ul class="nav-dropdown" role="list">
+          <li><a href="/newsroom"                       class="nav-dropdown__link">Intelligence Desk</a></li>
+          <li><a href="/research/capital-preservation"  class="nav-dropdown__link">Capital Preservation</a></li>
+          <li><a href="/research/hni-guide"             class="nav-dropdown__link">HNI Guide</a></li>
+          <li><a href="/research/family-office-guide"   class="nav-dropdown__link">Family Office Guide</a></li>
+          <li><a href="/market-comparison"              class="nav-dropdown__link">Market Comparison</a></li>
+          <li><a href="/research-methodology"           class="nav-dropdown__link">Research Methodology</a></li>
+        </ul>
+      </li>
+
+      <!-- Developers (dropdown) -->
+      <li class="nav-item--dropdown">
+        <button class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+          Developers <span class="nav-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <ul class="nav-dropdown" role="list">
+          <li><a href="/developers/emaar"    class="nav-dropdown__link">Emaar</a></li>
+          <li><a href="/developers/nakheel"  class="nav-dropdown__link">Nakheel</a></li>
+          <li><a href="/developers/sobha"    class="nav-dropdown__link">Sobha</a></li>
+        </ul>
+      </li>
+
+      <!-- Portfolio -->
+      <li><a href="/portfolio" class="nav-link">Portfolio</a></li>
+
+      <!-- Contact CTA -->
+      <li>
+        <a href="/contact" class="nav-link nav-link--cta">
+          Book a Call
+        </a>
+      </li>
+
+    </ul><!-- /nav-links -->
+
+    <!-- MOBILE HAMBURGER -->
+    <button class="nav-mobile-toggle" id="mobileMenuToggle"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+
+  </nav><!-- /nav-container -->
+
+  <!-- ── MOBILE DRAWER ── -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true" role="dialog" aria-label="Navigation">
+    <div class="mobile-drawer__inner">
+
+      <!-- Close button -->
+      <button class="mobile-drawer__close" id="mobileMenuClose" aria-label="Close navigation">
+        &times;
+      </button>
+
+      <!-- Logo in drawer -->
+      <a href="/" class="mobile-drawer__logo">V Capital</a>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <ul class="mobile-nav__list" role="list">
+
+          <li><a href="/"            class="mobile-nav__link">Home</a></li>
+          <li><a href="/#about"      class="mobile-nav__link">About</a></li>
+
+          <!-- Services accordion -->
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__accordion" aria-expanded="false">
+              Services <span aria-hidden="true">+</span>
+            </button>
+            <ul class="mobile-nav__sub" role="list" hidden>
+              <li><a href="/how-we-work"         class="mobile-nav__sub-link">How We Work</a></li>
+              <li><a href="/why-advisor"         class="mobile-nav__sub-link">Why an Advisor</a></li>
+              <li><a href="/capital-structuring" class="mobile-nav__sub-link">Capital Structuring</a></li>
+              <li><a href="/investment-guide"    class="mobile-nav__sub-link">Investment Guide</a></li>
+              <li><a href="/risks"               class="mobile-nav__sub-link">Risk Framework</a></li>
+            </ul>
+          </li>
+
+          <!-- Zones accordion -->
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__accordion" aria-expanded="false">
+              Investment Zones <span aria-hidden="true">+</span>
+            </button>
+            <ul class="mobile-nav__sub" role="list" hidden>
+              <li><a href="/zones/palm-jumeirah"       class="mobile-nav__sub-link">Palm Jumeirah</a></li>
+              <li><a href="/zones/palm-jebel-ali"      class="mobile-nav__sub-link">Palm Jebel Ali</a></li>
+              <li><a href="/zones/dubai-marina"        class="mobile-nav__sub-link">Dubai Marina</a></li>
+              <li><a href="/zones/downtown-dubai"      class="mobile-nav__sub-link">Downtown Dubai</a></li>
+              <li><a href="/zones/business-bay"        class="mobile-nav__sub-link">Business Bay</a></li>
+              <li><a href="/zones/dubai-hills-estate"  class="mobile-nav__sub-link">Dubai Hills Estate</a></li>
+              <li><a href="/zones/emirates-hills"      class="mobile-nav__sub-link">Emirates Hills</a></li>
+              <li><a href="/zones/dubai-creek-harbour" class="mobile-nav__sub-link">Dubai Creek Harbour</a></li>
+              <li><a href="/zones/sobha-hartland"      class="mobile-nav__sub-link">Sobha Hartland</a></li>
+              <li><a href="/zones/dubai-south"         class="mobile-nav__sub-link">Dubai South</a></li>
+              <li><a href="/zones/jvc"                 class="mobile-nav__sub-link">JVC</a></li>
+              <li><a href="/zones/meydan"              class="mobile-nav__sub-link">Meydan</a></li>
+              <li><a href="/#zones"                    class="mobile-nav__sub-link">All 35 Zones →</a></li>
+            </ul>
+          </li>
+
+          <!-- Research accordion -->
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__accordion" aria-expanded="false">
+              Research <span aria-hidden="true">+</span>
+            </button>
+            <ul class="mobile-nav__sub" role="list" hidden>
+              <li><a href="/newsroom"                      class="mobile-nav__sub-link">Intelligence Desk</a></li>
+              <li><a href="/research/capital-preservation" class="mobile-nav__sub-link">Capital Preservation</a></li>
+              <li><a href="/research/hni-guide"            class="mobile-nav__sub-link">HNI Guide</a></li>
+              <li><a href="/research/family-office-guide"  class="mobile-nav__sub-link">Family Office Guide</a></li>
+              <li><a href="/market-comparison"             class="mobile-nav__sub-link">Market Comparison</a></li>
+            </ul>
+          </li>
+
+          <!-- Developers accordion -->
+          <li class="mobile-nav__group">
+            <button class="mobile-nav__accordion" aria-expanded="false">
+              Developers <span aria-hidden="true">+</span>
+            </button>
+            <ul class="mobile-nav__sub" role="list" hidden>
+              <li><a href="/developers/emaar"   class="mobile-nav__sub-link">Emaar</a></li>
+              <li><a href="/developers/nakheel" class="mobile-nav__sub-link">Nakheel</a></li>
+              <li><a href="/developers/sobha"   class="mobile-nav__sub-link">Sobha</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/portfolio" class="mobile-nav__link">Portfolio</a></li>
+          <li><a href="/contact"   class="mobile-nav__link mobile-nav__link--cta">Book a Call</a></li>
+
+        </ul>
+      </nav>
+
+      <!-- Mobile contact strip -->
+      <div class="mobile-drawer__contact">
+        <a href="https://wa.me/971555540762" class="mobile-drawer__whatsapp" target="_blank" rel="noopener">
+          WhatsApp: +971 555 540 762
+        </a>
+        <a href="mailto:advisory@vcapital.ae" class="mobile-drawer__email">
+          advisory@vcapital.ae
+        </a>
+      </div>
+
+    </div><!-- /inner -->
+  </div><!-- /mobile-drawer -->
+
+  <!-- Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+</header><!-- /site-header -->
