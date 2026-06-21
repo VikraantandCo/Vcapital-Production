@@ -115,129 +115,121 @@
       "destination": "/newsroom/newsroom-hormuz-effect.html"
     },
     {
-      "source": "/zones/palm-jumeirah",
-      "destination": "/zones/palm-jumeirah.html"
-    },
-    {
-      "source": "/zones/palm-jebel-ali",
-      "destination": "/zones/palm-jebel-ali.html"
-    },
-    {
-      "source": "/zones/jvc",
-      "destination": "/zones/jvc.html"
-    },
-    {
-      "source": "/zones/dubai-marina",
-      "destination": "/zones/dubai-marina.html"
-    },
-    {
-      "source": "/zones/business-bay",
-      "destination": "/zones/business-bay.html"
-    },
-    {
-      "source": "/zones/dubai-hills-estate",
-      "destination": "/zones/dubai-hills-estate.html"
-    },
-    {
-      "source": "/zones/emirates-hills",
-      "destination": "/zones/emirates-hills.html"
-    },
-    {
-      "source": "/zones/dubai-creek-harbour",
-      "destination": "/zones/creek-harbour.html"
-    },
-    {
-      "source": "/zones/sobha-hartland",
-      "destination": "/zones/sobha-hartland.html"
-    },
-    {
-      "source": "/zones/dubai-south",
-      "destination": "/zones/dubai-south.html"
-    },
-    {
-      "source": "/zones/jumeirah-bay-island",
-      "destination": "/zones/jumeirah-bay-island.html"
-    },
-    {
-      "source": "/zones/damac-hills",
-      "destination": "/zones/damac-hills.html"
-    },
-    {
-      "source": "/zones/arjan",
-      "destination": "/zones/arjan.html"
-    },
-    {
-      "source": "/zones/motor-city",
-      "destination": "/zones/motor-city.html"
-    },
-    {
-      "source": "/zones/al-furjan",
-      "destination": "/zones/al-furjan.html"
-    },
-    {
-      "source": "/zones/bluewaters",
-      "destination": "/zones/bluewaters.html"
-    },
-    {
-      "source": "/zones/silicon-oasis",
-      "destination": "/zones/silicon-oasis.html"
-    },
-    {
-      "source": "/palm-jumeirah-investment",
-      "destination": "/zones/palm-jumeirah.html"
-    },
-    {
-      "source": "/palm-jebel-ali-investment",
-      "destination": "/zones/palm-jebel-ali.html"
-    },
-    {
-      "source": "/jvc-investment",
-      "destination": "/zones/jvc.html"
-    },
-    {
-      "source": "/dubai-marina-investment",
-      "destination": "/zones/dubai-marina.html"
-    },
-    {
-      "source": "/business-bay-investment",
-      "destination": "/zones/business-bay.html"
-    },
-    {
-      "source": "/dubai-hills-investment",
-      "destination": "/zones/dubai-hills-estate.html"
-    },
-    {
-      "source": "/emirates-hills-investment",
-      "destination": "/zones/emirates-hills.html"
-    },
-    {
-      "source": "/dubai-creek-harbour-investment",
-      "destination": "/zones/creek-harbour.html"
-    },
-    {
-      "source": "/sobha-hartland-investment",
-      "destination": "/zones/sobha-hartland.html"
-    },
-    {
-      "source": "/dubai-south-investment",
-      "destination": "/zones/dubai-south.html"
-    },
-    {
-      "source": "/jumeirah-bay-investment",
-      "destination": "/zones/jumeirah-bay-island.html"
-    },
-    {
-      "source": "/damac-hills-investment",
-      "destination": "/zones/damac-hills.html"
-    },
-    {
-      "source": "/bluewaters-investment",
-      "destination": "/zones/bluewaters.html"
-    },
-    {
-      "source": "/silicon-oasis-investment",
-      "destination": "/zones/silicon-oasis.html"
-    },
+  "source": "/palm-jumeirah",
+  "destination": "/zones/palm-jumeirah.html"
+},
+{
+  "source": "/palm-jebel-ali",
+  "destination": "/zones/palm-jebel-ali.html"
+},
+{
+  "source": "/jvc",
+  "destination": "/zones/jvc.html"
+},
+{
+  "source": "/business-bay",
+  "destination": "/zones/business-bay.html"
+},
+{
+  "source": "/dubai-marina",
+  "destination": "/zones/dubai-marina.html"
+},
+{
+  "source": "/dubai-south",
+  "destination": "/zones/dubai-south.html"
+},
+{
+  "source": "/creek-harbour",
+  "destination": "/zones/creek-harbour.html"
+},
+{
+  "source": "/dubai-islands",
+  "destination": "/zones/dubai-islands.html"
+},
+{
+  "source": "/tilal-al-ghaf",
+  "destination": "/zones/tilal-al-ghaf.html"
+},
+{
+  "source": "/district-one",
+  "destination": "/zones/district-one.html"
+},
+{
+  "source": "/district-one-west",
+  "destination": "/zones/district-one-west.html"
+},
+{
+  "source": "/grand-polo-club",
+  "destination": "/zones/grand-polo-club.html"
+},
+{
+  "source": "/the-oasis",
+  "destination": "/zones/the-oasis.html"
+},
+{
+  "source": "/the-heights",
+  "destination": "/zones/the-heights.html"
+},
+{
+  "source": "/bluewaters",
+  "destination": "/zones/bluewaters.html"
+},
+{
+  "source": "/emirates-hills",
+  "destination": "/zones/emirates-hills.html"
+},
+{
+  "source": "/dubai-hills-estate",
+  "destination": "/zones/dubai-hills-estate.html"
+},
+{
+  "source": "/sobha-hartland",
+  "destination": "/zones/sobha-hartland.html"
+},
+{
+  "source": "/damac-hills",
+  "destination": "/zones/damac-hills.html"
+},
+{
+  "source": "/damac-hills-2",
+  "destination": "/zones/damac-hills-2.html"
+},
+{
+  "source": "/damac-lagoons",
+  "destination": "/zones/damac-lagoons.html"
+},
+{
+  "source": "/damac-riverside",
+  "destination": "/zones/damac-riverside.html"
+},
+{
+  "source": "/jumeirah-park",
+  "destination": "/zones/jumeirah-park.html"
+},
+{
+  "source": "/nad-al-sheba",
+  "destination": "/zones/nad-al-sheba.html"
+},
+{
+  "source": "/sports-city",
+  "destination": "/zones/sports-city.html"
+},
+{
+  "source": "/motor-city",
+  "destination": "/zones/motor-city.html"
+},
+{
+  "source": "/al-furjan",
+  "destination": "/zones/al-furjan.html"
+},
+{
+  "source": "/arjan",
+  "destination": "/zones/arjan.html"
+},
+{
+  "source": "/silicon-oasis",
+  "destination": "/zones/silicon-oasis.html"
+}
     {
       "source": "/dubai-south-upside-analysis",
       "destination": "/research/dubai-south-analysis.html"
