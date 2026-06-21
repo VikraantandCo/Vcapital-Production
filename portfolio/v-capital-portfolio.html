@@ -22,6 +22,7 @@
 <meta property="og:type" content="website"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://vcapital.ae"/>
+<link rel="stylesheet" href="/styles/typography.css">
 
 <!-- Schema: Person -->
 <script type="application/ld+json">
@@ -2179,57 +2180,9 @@ div.hamburger { display: none !important; }
   </script>
 </head>
 <body>
-
-<!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
-<nav id="main-nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="#" class="nav-logo">V Capital<span>.</span></a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#intelligence">Market Intel</a></li>
-        <li><a href="#capital-flow">Capital Flow</a></li><li><a href="#hotspots">Hotspots</a></li><li><a href="#opportunities">Live Deals</a></li>
-        <li><a href="#strategy">Strategy</a></li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="https://wa.me/971555540762?text=Hi%20Vikraant%2C%20I%27d%20like%20to%20explore%20investment%20opportunities%20with%20V%20Capital." target="_blank" class="nav-cta">Private Advisory</a>
-      <button class="nav-hamburger" id="navHamburger" aria-label="Open navigation menu" onclick="toggleMobileNav()">
-        <span></span><span></span><span></span>
-      </button>
-
-    </div>
-  </div>
-</nav>
-
-<!-- ═══ MOBILE NAV OVERLAY ═══ -->
-<div class="mobile-nav-overlay" id="mobileNavOverlay" onclick="closeMobileNav()"></div>
-<div class="mobile-nav-drawer" id="mobileNavDrawer">
-  <div class="mobile-nav-header">
-    <span class="nav-logo" style="font-family:var(--font-display);font-size:1.2rem;font-weight:500;letter-spacing:0.04em;color:var(--white);">V Capital<span style="color:var(--gold)">.</span></span>
-    <button class="mobile-nav-close" onclick="closeMobileNav()" aria-label="Close navigation">×</button>
-  </div>
-  <ul class="mobile-nav-links">
-    <li><a href="#about" onclick="closeMobileNav()">About V Capital</a></li>
-    <li><a href="#intelligence" onclick="closeMobileNav()">Market Intelligence</a></li>
-    <li><a href="#capital-flow" onclick="closeMobileNav()">Where Capital Is Moving</a></li>
-    <li><a href="#hotspots" onclick="closeMobileNav()">Capital Hotspots</a></li>
-    <li><a href="#opportunities" onclick="closeMobileNav()">Live Deal Inventory</a></li>
-    <li><a href="#developers" onclick="closeMobileNav()">Developer Partners</a></li>
-    <li><a href="#strategy" onclick="closeMobileNav()">Strategy</a></li>
-    <li><a href="#insights" onclick="closeMobileNav()">Insights</a></li>
-    <li><a href="#results" onclick="closeMobileNav()">Results</a></li>
-    <li><a href="#contact" onclick="closeMobileNav()">Contact</a></li>
-  </ul>
-  <a href="https://wa.me/971555540762?text=Hi%20Vikraant%2C%20I%27d%20like%20to%20explore%20investment%20opportunities%20with%20V%20Capital." target="_blank" class="mobile-nav-wa" onclick="closeMobileNav()">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.115 1.524 5.843L0 24l6.344-1.524A11.957 11.957 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.007-1.368l-.36-.214-3.727.977.994-3.638-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
-    WhatsApp Vikraant
-  </a>
-  <div class="mobile-nav-footer">
-    <div style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.14em;color:rgba(255,255,255,0.3);text-transform:uppercase;">V Capital · Luxury Real Estate Portfolio Curation · Dubai</div>
-  </div>
-</div>
-
+<div id="navbar-container"></div>
+<link rel="stylesheet" href="/styles/nav.css">
+<script src="/scripts/load-navbar.js" defer></script>
 <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
 <section id="hero">
   <div class="hero-bg"></div>
