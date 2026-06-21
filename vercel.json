@@ -119,6 +119,10 @@
   "destination": "/zones/palm-jumeirah.html"
 },
 {
+  "source": "/palm-jumeirah",
+  "destination": "/zones/palm-jumeirah.html"
+},
+{
   "source": "/palm-jebel-ali",
   "destination": "/zones/palm-jebel-ali.html"
 },
@@ -229,7 +233,7 @@
 {
   "source": "/silicon-oasis",
   "destination": "/zones/silicon-oasis.html"
-}
+},
     {
       "source": "/dubai-south-upside-analysis",
       "destination": "/research/dubai-south-analysis.html"
