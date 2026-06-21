@@ -47,12 +47,15 @@
     { "source": "/zone-analysis/palm-jebel-ali",   "destination": "/zone-analysis/palm-jebel-ali-analysis.html" },
 
    
-    { "source": "/capital-structuring-overview",   "destination": "/capital-structuring/capital-structuring-overview.html" },
-    { "source": "/capital-structuring--10m-20m",   "destination": "/capital-structuring/capital-structuring-10m.html" },
-    { "source": "/capital-structuring--20m-50m",   "destination": "/capital-structuring/capital-structuring-20m.html" },
-    { "source": "/capital-structuring--50m-100m",  "destination": "/capital-structuring/capital-structuring-50m.html" },
-    { "source": "/capital-structuring--100m-plus", "destination": "/capital-structuring/capital-structuring-100m.html" },
-
+      {{ "source": "/capital-structuring/10m",
+      "destination": "/capital-structuring/capital-structuring-10m.html" },
+      { "source": "/capital-structuring/20m",
+      "destination": "/capital-structuring/capital-structuring-20m.html" },
+      { "source": "/capital-structuring/50m",
+      "destination": "/capital-structuring/capital-structuring-50m.html" },
+      { "source": "/capital-structuring/100m",
+      "destination": "/capital-structuring/capital-structuring-100m.html" },
+    
     { "source": "/research/capital-preservation",  "destination": "/research/capital-preservation.html" },
     { "source": "/research/family-office-guide",   "destination": "/research/family-office-guide.html" },
     { "source": "/research/hni-guide",             "destination": "/research/hni-guide.html" },
