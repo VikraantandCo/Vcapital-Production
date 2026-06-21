@@ -55,13 +55,16 @@
     item.addEventListener('mouseleave', function () { item.classList.remove('open'); });
     var toggle = item.querySelector('a, button');
     if (toggle) {
-      toggle.addEventListener('click', function (e) {
-        if (window.innerWidth <= 1024) return; // mobile handled by drawer
-        e.preventDefault();
-        item.classList.toggle('open');
-      });
+  toggle.addEventListener('click', function (e) {
+    if (window.innerWidth <= 1024) return;
+
+    // Only intercept the top-level menu item
+    if (e.currentTarget.classList.contains('nav-link')) {
+      e.preventDefault();
+      item.classList.toggle('open');
     }
   });
+}
 
   // Close dropdowns on outside click
   document.addEventListener('click', function (e) {
