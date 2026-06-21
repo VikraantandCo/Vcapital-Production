@@ -15,9 +15,9 @@ const REQUIRED_NAVLINKS = [
   '/#contact',
 ];
 const REQUIRED_ZONE_LINKS = [
-  '/palm-jumeirah-investment',
-  '/business-bay-investment',
-  '/jvc-investment',
+  '/palm-jumeirah',
+  '/business-bay',
+  '/jvc',
 ];
 const REQUIRED_FOOTER = ['privacy', 'disclaimer'];
 
