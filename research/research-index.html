@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="V Capital Market Intelligence — Institutional-grade research on Dubai real estate, macroeconomics, capital flows, and investment frameworks. By Vikraant K Parcha.">
+  <title>Market Intelligence & Research | V Capital Dubai</title>
+  <link rel="canonical" href="https://vcapital.ae/research">
+  <link rel="stylesheet" href="/styles/global.css">
+  <link rel="stylesheet" href="/styles/nav.css">
+  <link rel="stylesheet" href="/styles/homepage.css">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://vcapital.ae/research">
+  <meta property="og:title"       content="Market Intelligence & Research | V Capital Dubai">
+  <meta property="og:description" content="Institutional-grade research on Dubai real estate by Vikraant K Parcha and V Capital.">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "V Capital Market Intelligence",
+    "url": "https://vcapital.ae/research",
+    "description": "Institutional-grade real estate research and market intelligence by V Capital Dubai",
+    "publisher": {
+      "@type": "Organization",
+      "name": "V Capital",
+      "url": "https://vcapital.ae"
+    }
+  }
+  </script>
+
+  <style>
+    /* ── Page-level tokens (mirror homepage.css vars) ── */
+    :root {
+      --black:        #080808;
+      --black-2:      #0f0f0f;
+      --black-3:      #111111;
+      --gold:         #C9A847;
+      --gold-dim:     rgba(201,168,71,0.6);
+      --white:        #F5F2EC;
+      --white-dim:    rgba(245,242,236,0.55);
+      --white-faint:  rgba(245,242,236,0.18);
+      --border:       rgba(255,255,255,0.07);
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --font-mono:    'DM Mono', 'Courier New', monospace;
+    }
+
+    /* ── Reset/base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--black);
+      color: var(--white-dim);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Hero / Page Header ── */
+    .mi-hero {
+      background: var(--black);
+      border-bottom: 1px solid var(--border);
+      padding: 90px 0 72px;
+      text-align: center;
+    }
+    .mi-hero .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.42rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+    .mi-hero h1 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+    .mi-hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .mi-hero p {
+      font-size: 0.9rem;
+      color: var(--white-dim);
+      line-height: 1.8;
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+    .mi-hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .mi-hero-meta span {
+      font-family: var(--font-mono);
+      font-size: 0.42rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white-faint);
+    }
+    .mi-hero-meta span strong {
+      color: var(--gold-dim);
+      font-weight: 400;
+    }
+
+    /* ── Breadcrumb ── */
+    .mi-breadcrumb {
+      background: rgba(255,255,255,0.02);
+      border-bottom: 1px solid var(--border);
+      padding: 0.875rem 0;
+    }
+    .mi-breadcrumb-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      font-family: var(--font-mono);
+      font-size: 0.42rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white-faint);
+    }
+    .mi-breadcrumb-inner a { color: var(--white-faint); transition: color 0.2s; }
+    .mi-breadcrumb-inner a:hover { color: var(--gold); }
+    .mi-breadcrumb-inner .sep { color: rgba(255,255,255,0.15); }
+
+    /* ── Filter tabs (exact match to homepage) ── */
+    .intel-section {
+      padding: 80px 0;
+    }
+    .intel-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 60px;
+    }
+    .intel-header .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.42rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      display: block;
+      margin-bottom: 1.25rem;
+    }
+    .intel-header h2 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .intel-header p {
+      font-size: 0.9rem;
+      color: var(--white-dim);
+      line-height: 1.8;
+    }
+
+    /* ── Tabs — EXACT from homepage.css ── */
+    .intel-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 60px;
+      border: 1px solid var(--border);
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+    }
+    .intel-tab {
+      padding: 14px 28px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white-dim);
+      cursor: pointer;
+      transition: all 0.25s;
+      background: none;
+      border: none;
+      border-right: 1px solid var(--border);
+    }
+    .intel-tab:last-child { border-right: none; }
+    .intel-tab:hover { color: var(--gold); background: rgba(201,168,71,0.03); }
+    .intel-tab.active { color: var(--gold); background: rgba(201,168,71,0.06); }
+
+    /* ── Articles grid — EXACT from homepage.css ── */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    @media (max-width: 900px) {
+      .articles-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .intel-tab { padding: 12px 16px; font-size: 0.55rem; }
+    }
+
+    /* ── Article card — EXACT from homepage.css ── */
+    .article-card {
+      background: var(--black-2);
+      padding: 48px 40px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .article-card:hover { background: rgba(201,168,71,0.03); }
+    .article-card:hover::after { transform: scaleX(1); }
+    .article-card[style*="display:none"],
+    .article-card.hidden { display: none !important; }
+
+    .article-card-cat {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.2em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .article-card-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.3;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .article-card-excerpt {
+      font-size: 0.85rem;
+      color: var(--white-dim);
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .article-card-meta {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: var(--white-faint);
+    }
+    .article-card-arrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 28px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      color: var(--gold);
+      text-transform: uppercase;
+      transition: gap 0.3s;
+    }
+    .article-card:hover .article-card-arrow { gap: 16px; }
+
+    /* ── Tag badge ── */
+    .article-card-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.38rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--black);
+      background: var(--gold);
+      padding: 3px 8px;
+      margin-bottom: 16px;
+    }
+
+    /* ── Research attribution ── */
+    .mi-attribution {
+      margin-top: 1px;
+      background: var(--black-2);
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      text-align: center;
+    }
+    .mi-attribution p {
+      font-family: var(--font-mono);
+      font-size: 0.4rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white-faint);
+      line-height: 2;
+    }
+    .mi-attribution a {
+      color: var(--gold-dim);
+      transition: color 0.2s;
+    }
+    .mi-attribution a:hover { color: var(--gold); }
+
+    /* ── Footer strip ── */
+    .mi-footer-strip {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    .mi-footer-strip p {
+      font-family: var(--font-mono);
+      font-size: 0.38rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.15);
+    }
+    .mi-footer-strip a {
+      color: var(--gold-dim);
+      margin: 0 0.5rem;
+    }
+
+    /* ── Count indicator ── */
+    .mi-count {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.42rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white-faint);
+    }
+    .mi-count span {
+      color: var(--gold-dim);
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Universal Navbar -->
+<div id="navbar-container"></div>
+<script src="/scripts/load-navbar.js" defer></script>
+
+<!-- Breadcrumb -->
+<div class="mi-breadcrumb">
+  <div class="container">
+    <div class="mi-breadcrumb-inner">
+      <a href="/">V Capital</a>
+      <span class="sep">›</span>
+      <span style="color:rgba(245,242,236,0.45)">Market Intelligence</span>
+    </div>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="mi-hero">
+  <div class="container">
+    <span class="section-label">V Capital · Research Desk · 2026</span>
+    <h1>Market Intelligence<br><em>&amp; Research</em></h1>
+    <p>Institutional-grade analysis of Dubai's real estate market — macroeconomic frameworks, capital flow intelligence, and investment theses produced exclusively for serious investors, HNWIs, and family offices.</p>
+    <div class="mi-hero-meta">
+      <span>Series <strong>Macro &amp; Geopolitics</strong></span>
+      <span>·</span>
+      <span><strong>10</strong> Publications</span>
+      <span>·</span>
+      <span>Author <strong>Vikraant K Parcha</strong></span>
+      <span>·</span>
+      <span>V Capital · 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- Intelligence Grid Section -->
+<section class="intel-section" id="intelligence">
+  <div class="container">
+
+    <div class="intel-header">
+      <span class="section-label">Luxury Market Intelligence</span>
+      <h2>Investment Research &amp;<br><em style="font-style:italic;color:var(--gold)">Market Intelligence</em></h2>
+      <p>Deep analysis of Dubai's real estate market through a macroeconomic, geopolitical, and capital allocation lens. Curated for serious allocators. Never brokerage. Never hype.</p>
+    </div>
+
+    <!-- Filter tabs — exact pattern from homepage -->
+    <div class="intel-tabs">
+      <button class="intel-tab active"   onclick="filterArticles('all',this)">All</button>
+      <button class="intel-tab"          onclick="filterArticles('macro',this)">Macro</button>
+      <button class="intel-tab"          onclick="filterArticles('capital',this)">Capital Strategy</button>
+      <button class="intel-tab"          onclick="filterArticles('geopolitics',this)">Geopolitics</button>
+      <button class="intel-tab"          onclick="filterArticles('demographics',this)">Demographics</button>
+      <button class="intel-tab"          onclick="filterArticles('luxury',this)">Luxury</button>
+    </div>
+
+    <div class="mi-count" id="articleCount"><span>10</span> research publications</div>
+
+    <!-- ═══════════════════════════════════════════
+         ARTICLES GRID — 10 cards, 3-column layout
+         Exact .article-card structure from homepage
+         ═══════════════════════════════════════════ -->
+    <div class="articles-grid" id="articlesGrid" style="grid-template-columns:repeat(3,1fr);">
+
+      <!-- CARD 1: Oil Prices -->
+      <a class="article-card"
+         href="/research/how-oil-prices-influence-dubai-real-estate"
+         data-cat="macro"
+         aria-label="Read: How Oil Prices Influence Dubai Real Estate">
+        <div class="article-card-tag">Macro &amp; Geopolitics</div>
+        <div class="article-card-cat">Macro Intelligence · 2026</div>
+        <div class="article-card-title">How Oil Prices Influence Dubai Real Estate</div>
+        <div class="article-card-excerpt">The relationship between crude oil and Dubai property is neither linear nor simple — it is mediated by GCC fiscal capacity, sovereign wealth behaviour, employment cycles, and regional capital flows. A rigorous framework for capital allocators navigating the oil price cycle.</div>
+        <div class="article-card-meta">3,800 words · 15 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 2: Interest Rates -->
+      <a class="article-card"
+         href="/research/interest-rates-impact-dubai-property-prices"
+         data-cat="macro"
+         aria-label="Read: Interest Rates And Their Impact On Property Prices">
+        <div class="article-card-tag">Macro &amp; Monetary Policy</div>
+        <div class="article-card-cat">Monetary Intelligence · 2026</div>
+        <div class="article-card-title">Interest Rates And Their Impact On Dubai Property Prices</div>
+        <div class="article-card-excerpt">The AED-USD peg means Federal Reserve decisions flow directly into UAE mortgage rates. Understanding the EIBOR transmission mechanism, off-plan payment plan economics, and yield spread analysis for rate-sensitive environments.</div>
+        <div class="article-card-meta">3,600 words · 14 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 3: Population Growth -->
+      <a class="article-card"
+         href="/research/population-growth-housing-demand-dubai"
+         data-cat="demographics"
+         aria-label="Read: Population Growth And Housing Demand">
+        <div class="article-card-tag">Demographics</div>
+        <div class="article-card-cat">Demographic Intelligence · 2026</div>
+        <div class="article-card-title">Population Growth And Housing Demand In Dubai</div>
+        <div class="article-card-excerpt">Dubai targets 5.8 million residents by 2040. A structural analysis of where that growth is going — geographically, demographically, and economically — and how to align capital with the communities that will benefit most from one of the world's most ambitious urbanisation programmes.</div>
+        <div class="article-card-meta">3,700 words · 15 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 4: UAE Immigration -->
+      <a class="article-card"
+         href="/research/uae-immigration-trends-housing-dubai"
+         data-cat="demographics"
+         aria-label="Read: UAE Immigration Trends And Housing">
+        <div class="article-card-tag">Immigration &amp; Policy</div>
+        <div class="article-card-cat">Policy Intelligence · 2026</div>
+        <div class="article-card-title">UAE Immigration Trends And Housing: How Visa Policy Is Reshaping Dubai's Real Estate Demand</div>
+        <div class="article-card-excerpt">From the kafala system to the Golden Visa, Green Visa, and Retirement Visa — a comprehensive analysis of how UAE immigration policy transformation has restructured the nature of residential demand across Dubai's property spectrum.</div>
+        <div class="article-card-meta">3,500 words · 14 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 5: Peace Agreements -->
+      <a class="article-card"
+         href="/research/peace-agreements-investor-sentiment-dubai-real-estate"
+         data-cat="geopolitics"
+         aria-label="Read: Peace Agreements And Investor Sentiment">
+        <div class="article-card-tag">Geopolitics</div>
+        <div class="article-card-cat">Geopolitical Intelligence · 2026</div>
+        <div class="article-card-title">Peace Agreements And Investor Sentiment: How Geopolitical Normalisation Shapes Dubai Real Estate</div>
+        <div class="article-card-excerpt">The Abraham Accords, Saudi-Iran normalisation, and the India-UAE CEPA — how diplomatic architecture shifts translate into real estate capital flows, new investor constituencies, and community-level demand patterns in Dubai.</div>
+        <div class="article-card-meta">3,400 words · 13 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 6: Dollar Strength -->
+      <a class="article-card"
+         href="/research/dollar-strength-gcc-real-estate"
+         data-cat="macro"
+         aria-label="Read: Dollar Strength And GCC Real Estate">
+        <div class="article-card-tag">Currency &amp; Macro</div>
+        <div class="article-card-cat">Currency Intelligence · 2026</div>
+        <div class="article-card-title">Dollar Strength And GCC Real Estate: Currency Dynamics For International Capital Allocators</div>
+        <div class="article-card-excerpt">The AED-USD peg eliminates exchange rate risk for dollar holders — but creates direct purchasing power differentials for European, Indian, and Asian investors. How dollar cycles affect relative attractiveness, buyer flows, and allocation timing across nationalities.</div>
+        <div class="article-card-meta">3,500 words · 14 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 7: Global Liquidity -->
+      <a class="article-card"
+         href="/research/global-liquidity-luxury-assets-dubai"
+         data-cat="luxury"
+         aria-label="Read: Global Liquidity And Luxury Assets">
+        <div class="article-card-tag">Luxury &amp; Liquidity</div>
+        <div class="article-card-cat">Luxury Market Intelligence · 2026</div>
+        <div class="article-card-title">Global Liquidity And Luxury Assets: How Monetary Conditions Shape Dubai's Prime Property Market</div>
+        <div class="article-card-excerpt">Central bank balance sheets, HNWI wealth creation, and the 2020–2022 liquidity supercycle — how global monetary conditions drive demand for Dubai's ultra-prime segment and how to distinguish between structural value and liquidity-inflated premium.</div>
+        <div class="article-card-meta">3,600 words · 14 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 8: Geopolitics -->
+      <a class="article-card"
+         href="/research/impact-geopolitics-dubai-property"
+         data-cat="geopolitics"
+         aria-label="Read: The Impact Of Geopolitics On Dubai Property">
+        <div class="article-card-tag">Geopolitics</div>
+        <div class="article-card-cat">Risk Intelligence · 2026</div>
+        <div class="article-card-title">The Impact Of Geopolitics On Dubai Property: A Framework For Navigating Regional And Global Risk</div>
+        <div class="article-card-excerpt">US-China competition, Russia-Ukraine capital reallocation, the Gaza conflict, and the Houthi Red Sea disruption — a framework that distinguishes geopolitical noise from structural signal and defines the appropriate portfolio response to each.</div>
+        <div class="article-card-meta">3,700 words · 15 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 9: Global Capital -->
+      <a class="article-card"
+         href="/research/why-global-capital-flowing-into-dubai-real-estate"
+         data-cat="capital"
+         aria-label="Read: Why Global Capital Is Flowing Into Dubai">
+        <div class="article-card-tag">Capital Strategy</div>
+        <div class="article-card-cat">Capital Flow Intelligence · 2026</div>
+        <div class="article-card-title">Why Global Capital Is Flowing Into Dubai: The Structural Investment Thesis</div>
+        <div class="article-card-excerpt">Zero income tax, DIFC Common Law courts, world-class infrastructure, Golden Visa accessibility, and geopolitical neutrality — the structural advantage stack that is attracting Indian, European, Russian, and Chinese capital to Dubai in record volumes. And the risks that could erode it.</div>
+        <div class="article-card-meta">3,800 words · 15 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+      <!-- CARD 10: Future 2035 -->
+      <a class="article-card"
+         href="/research/future-dubai-real-estate-2035"
+         data-cat="capital"
+         aria-label="Read: The Future Of Dubai Real Estate Through 2035">
+        <div class="article-card-tag">Long-Term Framework</div>
+        <div class="article-card-cat">Outlook · 2026–2035</div>
+        <div class="article-card-title">The Future Of Dubai Real Estate Through 2035: An Institutional Outlook</div>
+        <div class="article-card-excerpt">Al Maktoum Airport at 260M passengers. 5.8M residents by 2040. The D33 Economic Agenda. Creek Tower. Dubai South. A decade-long structural framework — community by community, cycle by cycle — for patient capital seeking to position across Dubai's most consequential infrastructure horizon.</div>
+        <div class="article-card-meta">4,200 words · 17 min read · V Capital Research Desk · 2026</div>
+        <div class="article-card-arrow">Read Full Analysis <span>&#8594;</span></div>
+      </a>
+
+    </div>
+    <!-- /articles-grid -->
+
+    <!-- Research methodology attribution — exact from homepage -->
+    <div style="margin-top:1.5rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,0.05);text-align:center">
+      <a href="/research-methodology"
+         style="font-family:var(--font-mono);font-size:0.4rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,242,236,0.2);text-decoration:none">
+        Research Methodology: DLD · DXBinteract · Knight Frank · Bloomberg · IMF · Federal Reserve &#8594;
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Author Strip -->
+<section style="background:var(--black-2);border-top:1px solid var(--border);padding:64px 0">
+  <div class="container">
+    <div style="max-width:700px;margin:0 auto;text-align:center">
+      <span style="font-family:var(--font-mono);font-size:0.42rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dim);display:block;margin-bottom:1.25rem">Research Desk · V Capital</span>
+      <h2 style="font-family:var(--font-display);font-weight:300;font-size:clamp(1.8rem,3vw,2.4rem);color:var(--white);line-height:1.2;margin-bottom:1.25rem">About the Author</h2>
+      <p style="font-size:0.9rem;color:var(--white-dim);line-height:1.9;margin-bottom:1rem">
+        Vikraant K Parcha is the founder of V Capital, a Dubai-based private real estate advisory platform specialising in market intelligence, capital preservation and long-term wealth creation. Through V Capital, he helps investors, end users and family offices navigate Dubai's real estate market using data-backed frameworks, macroeconomic analysis and a research-first approach.
+      </p>
+      <p style="font-family:var(--font-display);font-style:italic;font-size:1.2rem;font-weight:300;color:var(--gold);margin-bottom:2rem">
+        "Think before you transact."
+      </p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap">
+        <a href="/" style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dim);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gold-dim)'">V Capital Home &#8594;</a>
+        <a href="/investment-guide" style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dim);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gold-dim)'">Investment Guide &#8594;</a>
+        <a href="/capital-structuring" style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dim);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gold-dim)'">Capital Structuring &#8594;</a>
+        <a href="/newsroom" style="font-family:var(--font-mono);font-size:0.55rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-dim);transition:color 0.2s" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--gold-dim)'">Newsroom &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer strip -->
+<div style="border-top:1px solid var(--border);padding:1.5rem 0;text-align:center">
+  <div class="container">
+    <p style="font-family:var(--font-mono);font-size:0.38rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,242,236,0.15)">
+      &copy; 2026 V Capital · Dubai Real Estate Intelligence ·
+      <a href="/privacy" style="color:var(--gold-dim);margin:0 0.4rem">Privacy</a> ·
+      <a href="/disclaimer" style="color:var(--gold-dim);margin:0 0.4rem">Disclaimer</a> ·
+      <a href="/research-methodology" style="color:var(--gold-dim);margin:0 0.4rem">Research Methodology</a>
+    </p>
+  </div>
+</div>
+
+<!-- vc-connect widget (matches zone pages) -->
+<div id="vc-connect" style="position:fixed;bottom:2rem;right:1.5rem;z-index:90;display:flex;flex-direction:column;align-items:flex-end;gap:.5rem;opacity:0;transform:translateY(12px);transition:all .5s ease;pointer-events:none">
+  <div id="vc-connect-menu" style="display:none;flex-direction:column;gap:4px;background:#0c0c0c;border:1px solid rgba(201,168,71,.2);padding:.75rem;box-shadow:0 16px 40px rgba(0,0,0,.6);min-width:200px">
+    <a href="https://wa.me/971555540762?text=Hi%20Vikraant%2C%20I%27d%20like%20to%20connect%20with%20V%20Capital." target="_blank" style="display:flex;align-items:center;gap:8px;padding:9px 12px;font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.7);text-decoration:none;transition:all .2s;border-bottom:1px solid rgba(255,255,255,.06)" onmouseover="this.style.color='#4ade80';this.style.paddingLeft='16px'" onmouseout="this.style.color='rgba(245,242,236,.7)';this.style.paddingLeft='12px'">💬 WhatsApp</a>
+    <a href="mailto:advisory@vcapital.ae" style="display:flex;align-items:center;gap:8px;padding:9px 12px;font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.7);text-decoration:none;transition:all .2s;border-bottom:1px solid rgba(255,255,255,.06)" onmouseover="this.style.color='#C9A847';this.style.paddingLeft='16px'" onmouseout="this.style.color='rgba(245,242,236,.7)';this.style.paddingLeft='12px'">✉ Email Advisory</a>
+    <button onclick="window.open('https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Mu9cxeUplFe4jzOCzKTFy7FQQXtQXa6WnMvrxDciwPa56QPxEG4mZ4RpaIm7817ZoZacHMFva?gv=true','_blank')" style="display:flex;align-items:center;gap:8px;padding:9px 12px;font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(245,242,236,.7);background:none;border:none;cursor:pointer;width:100%;text-align:left;transition:all .2s" onmouseover="this.style.color='#C9A847';this.style.paddingLeft='16px'" onmouseout="this.style.color='rgba(245,242,236,.7)';this.style.paddingLeft='12px'">📅 Book Consultation</button>
+  </div>
+  <button id="vc-connect-btn" onclick="toggleConnect()" style="display:flex;align-items:center;gap:8px;padding:11px 18px;background:linear-gradient(135deg,#9A7A28,#C9A847);color:#080808;font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.13em;text-transform:uppercase;border:none;cursor:pointer;box-shadow:0 4px 20px rgba(201,168,71,.3);transition:all .3s">
+    <span>✦</span> Connect with V Capital
+  </button>
+</div>
+
+<script>
+/* ── Filter tabs ─────────────────────────────────────────────── */
+function filterArticles(cat, btn) {
+  /* Update active tab */
+  document.querySelectorAll('.intel-tab').forEach(function(t){ t.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+
+  /* Show/hide cards */
+  var cards = document.querySelectorAll('.article-card');
+  var visible = 0;
+  cards.forEach(function(card) {
+    var cardCat = card.getAttribute('data-cat') || '';
+    if (cat === 'all' || cardCat === cat) {
+      card.style.display = 'block';
+      visible++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  /* Update count */
+  var countEl = document.getElementById('articleCount');
+  if (countEl) {
+    countEl.innerHTML = '<span>' + visible + '</span> research publication' + (visible !== 1 ? 's' : '');
+  }
+}
+
+/* ── vc-connect widget ───────────────────────────────────────── */
+function toggleConnect() {
+  var m = document.getElementById('vc-connect-menu');
+  if (m) m.style.display = m.style.display === 'flex' ? 'none' : 'flex';
+}
+document.addEventListener('click', function(e) {
+  var el = document.getElementById('vc-connect');
+  var m  = document.getElementById('vc-connect-menu');
+  if (el && m && !el.contains(e.target)) m.style.display = 'none';
+});
+window.addEventListener('scroll', function() {
+  var el = document.getElementById('vc-connect');
+  if (el) {
+    if (window.scrollY > 400) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.pointerEvents = 'auto';
+    } else {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(12px)';
+      el.style.pointerEvents = 'none';
+    }
+  }
+}, { passive: true });
+</script>
+
+</body>
+</html>
