@@ -397,6 +397,50 @@
     {
       "source": "/insights",
       "destination": "/newsroom"
+    },
+    {
+      "source": "/research",
+      "destination": "/research/research-index.html"
+    },
+    {
+      "source": "/research/how-oil-prices-influence-dubai-real-estate",
+      "destination": "/research/how-oil-prices-influence-dubai-real-estate.html"
+    },
+    {
+      "source": "/research/interest-rates-impact-dubai-property-prices",
+      "destination": "/research/interest-rates-impact-dubai-property-prices.html"
+    },
+    {
+      "source": "/research/population-growth-housing-demand-dubai",
+      "destination": "/research/population-growth-housing-demand-dubai.html"
+    },
+    {
+      "source": "/research/uae-immigration-trends-housing-dubai",
+      "destination": "/research/uae-immigration-trends-housing-dubai.html"
+    },
+    {
+      "source": "/research/peace-agreements-investor-sentiment-dubai-real-estate",
+      "destination": "/research/peace-agreements-investor-sentiment-dubai-real-estate.html"
+    },
+    {
+      "source": "/research/dollar-strength-gcc-real-estate",
+      "destination": "/research/dollar-strength-gcc-real-estate.html"
+    },
+    {
+      "source": "/research/global-liquidity-luxury-assets-dubai",
+      "destination": "/research/global-liquidity-luxury-assets-dubai.html"
+    },
+    {
+      "source": "/research/impact-geopolitics-dubai-property",
+      "destination": "/research/impact-geopolitics-dubai-property.html"
+    },
+    {
+      "source": "/research/why-global-capital-flowing-into-dubai-real-estate",
+      "destination": "/research/why-global-capital-flowing-into-dubai-real-estate.html"
+    },
+    {
+      "source": "/research/future-dubai-real-estate-2035",
+      "destination": "/research/future-dubai-real-estate-2035.html"
     }
   ],
   "headers": [
