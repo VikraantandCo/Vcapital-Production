@@ -119,10 +119,6 @@
       "destination": "/zones/palm-jumeirah.html"
     },
     {
-      "source": "/palm-jumeirah",
-      "destination": "/zones/palm-jumeirah.html"
-    },
-    {
       "source": "/palm-jebel-ali",
       "destination": "/zones/palm-jebel-ali.html"
     },
@@ -400,7 +396,7 @@
     },
     {
       "source": "/research",
-      "destination": "/research/research-index.html"
+      "destination": "/research/index.html"
     },
     {
       "source": "/research/how-oil-prices-influence-dubai-real-estate",
