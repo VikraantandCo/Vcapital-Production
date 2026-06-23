@@ -1,451 +1,59 @@
 {
-  "cleanUrls": false,
+  "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/projects/capital-structuring-overview",
-      "destination": "/capital-structuring/overview",
-      "permanent": true
-    },
-    {
-      "source": "/projects/capital-structuring-10m",
-      "destination": "/capital-structuring/10m-20m",
-      "permanent": true
-    },
-    {
-      "source": "/projects/capital-structuring-20m",
-      "destination": "/capital-structuring/20m-50m",
-      "permanent": true
-    },
-    {
-      "source": "/projects/capital-structuring-50m",
-      "destination": "/capital-structuring/50m-100m",
-      "permanent": true
-    },
-    {
-      "source": "/projects/capital-structuring-100m",
-      "destination": "/capital-structuring/100m-plus",
-      "permanent": true
-    },
-    {
-      "source": "/projects/:path*",
-      "destination": "/capital-structuring/:path*",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/fonts/:path*",
-      "destination": "/assets/fonts/:path*"
-    },
-    {
-      "source": "/home",
-      "destination": "/index.html"
-    },
-    {
-      "source": "/how-we-work",
-      "destination": "/pages/how-we-work.html"
-    },
-    {
-      "source": "/why-advisor",
-      "destination": "/pages/why-advisor.html"
-    },
-    {
-      "source": "/risks",
-      "destination": "/pages/risks.html"
-    },
-    {
-      "source": "/market-comparison",
-      "destination": "/pages/market-comparison.html"
-    },
-    {
-      "source": "/investment-guide",
-      "destination": "/pages/investment-guide.html"
-    },
-    {
-      "source": "/privacy",
-      "destination": "/pages/privacy.html"
-    },
-    {
-      "source": "/disclaimer",
-      "destination": "/pages/disclaimer.html"
-    },
-    {
-      "source": "/research-methodology",
-      "destination": "/pages/research-methodology.html"
-    },
-    {
-      "source": "/404",
-      "destination": "/pages/404.html"
-    },
-    {
-      "source": "/newsroom",
-      "destination": "/newsroom/newsroom-june-2026.html"
-    },
-    {
-      "source": "/newsroom/june-2026",
-      "destination": "/newsroom/newsroom-june-2026.html"
-    },
-    {
-      "source": "/newsroom/march-2026",
-      "destination": "/newsroom/newsroom-march-2026.html"
-    },
-    {
-      "source": "/newsroom/april-2026",
-      "destination": "/newsroom/newsroom-april-2026.html"
-    },
-    {
-      "source": "/newsroom/hormuz-effect",
-      "destination": "/newsroom/newsroom-hormuz-effect.html"
-    },
-    {
-      "source": "/newsroom-june-2026",
-      "destination": "/newsroom/newsroom-june-2026.html"
-    },
-    {
-      "source": "/newsroom-march-2026",
-      "destination": "/newsroom/newsroom-march-2026.html"
-    },
-    {
-      "source": "/newsroom-april-2026",
-      "destination": "/newsroom/newsroom-april-2026.html"
-    },
-    {
-      "source": "/hormuz-effect",
-      "destination": "/newsroom/newsroom-hormuz-effect.html"
-    },
-    {
-      "source": "/palm-jumeirah",
-      "destination": "/zones/palm-jumeirah.html"
-    },
-    {
-      "source": "/palm-jebel-ali",
-      "destination": "/zones/palm-jebel-ali.html"
-    },
-    {
-      "source": "/jvc",
-      "destination": "/zones/jvc.html"
-    },
-    {
-      "source": "/business-bay",
-      "destination": "/zones/business-bay.html"
-    },
-    {
-      "source": "/dubai-marina",
-      "destination": "/zones/dubai-marina.html"
-    },
-    {
-      "source": "/dubai-south",
-      "destination": "/zones/dubai-south.html"
-    },
-    {
-      "source": "/creek-harbour",
-      "destination": "/zones/creek-harbour.html"
-    },
-    {
-      "source": "/dubai-islands",
-      "destination": "/zones/dubai-islands.html"
-    },
-    {
-      "source": "/tilal-al-ghaf",
-      "destination": "/zones/tilal-al-ghaf.html"
-    },
-    {
-      "source": "/district-one",
-      "destination": "/zones/district-one.html"
-    },
-    {
-      "source": "/district-one-west",
-      "destination": "/zones/district-one-west.html"
-    },
-    {
-      "source": "/grand-polo-club",
-      "destination": "/zones/grand-polo-club.html"
-    },
-    {
-      "source": "/the-oasis",
-      "destination": "/zones/the-oasis.html"
-    },
-    {
-      "source": "/the-heights",
-      "destination": "/zones/the-heights.html"
-    },
-    {
-      "source": "/bluewaters",
-      "destination": "/zones/bluewaters.html"
-    },
-    {
-      "source": "/emirates-hills",
-      "destination": "/zones/emirates-hills.html"
-    },
-    {
-      "source": "/dubai-hills-estate",
-      "destination": "/zones/dubai-hills-estate.html"
-    },
-    {
-      "source": "/sobha-hartland",
-      "destination": "/zones/sobha-hartland.html"
-    },
-    {
-      "source": "/damac-hills",
-      "destination": "/zones/damac-hills.html"
-    },
-    {
-      "source": "/damac-hills-2",
-      "destination": "/zones/damac-hills-2.html"
-    },
-    {
-      "source": "/damac-lagoons",
-      "destination": "/zones/damac-lagoons.html"
-    },
-    {
-      "source": "/damac-riverside",
-      "destination": "/zones/damac-riverside.html"
-    },
-    {
-      "source": "/jumeirah-park",
-      "destination": "/zones/jumeirah-park.html"
-    },
-    {
-      "source": "/nad-al-sheba",
-      "destination": "/zones/nad-al-sheba.html"
-    },
-    {
-      "source": "/sports-city",
-      "destination": "/zones/sports-city.html"
-    },
-    {
-      "source": "/motor-city",
-      "destination": "/zones/motor-city.html"
-    },
-    {
-      "source": "/al-furjan",
-      "destination": "/zones/al-furjan.html"
-    },
-    {
-      "source": "/arjan",
-      "destination": "/zones/arjan.html"
-    },
-    {
-      "source": "/silicon-oasis",
-      "destination": "/zones/silicon-oasis.html"
-    },
-    {
-      "source": "/dubai-south-upside-analysis",
-      "destination": "/research/dubai-south-analysis.html"
-    },
-    {
-      "source": "/capital-structuring",
-      "destination": "/capital-structuring/capital-structuring-overview.html"
-    },
-    {
-      "source": "/capital-structuring/overview",
-      "destination": "/capital-structuring/capital-structuring-overview.html"
-    },
-    {
-      "source": "/capital-structuring/10m-20m",
-      "destination": "/capital-structuring/capital-structuring-10m.html"
-    },
-    {
-      "source": "/capital-structuring/20m-50m",
-      "destination": "/capital-structuring/capital-structuring-20m.html"
-    },
-    {
-      "source": "/capital-structuring/50m-100m",
-      "destination": "/capital-structuring/capital-structuring-50m.html"
-    },
-    {
-      "source": "/capital-structuring/100m-plus",
-      "destination": "/capital-structuring/capital-structuring-100m.html"
-    },
-    {
-      "source": "/capital-structuring-overview",
-      "destination": "/capital-structuring/capital-structuring-overview.html"
-    },
-    {
-      "source": "/capital-structuring--10m-20m",
-      "destination": "/capital-structuring/capital-structuring-10m.html"
-    },
-    {
-      "source": "/capital-structuring--20m-50m",
-      "destination": "/capital-structuring/capital-structuring-20m.html"
-    },
-    {
-      "source": "/capital-structuring--50m-100m",
-      "destination": "/capital-structuring/capital-structuring-50m.html"
-    },
-    {
-      "source": "/capital-structuring--100m-plus",
-      "destination": "/capital-structuring/capital-structuring-100m.html"
-    },
-    {
-      "source": "/research/dubai-south-analysis",
-      "destination": "/research/dubai-south-analysis.html"
-    },
-    {
-      "source": "/portfolio",
-      "destination": "/portfolio/v-capital-portfolio.html"
-    },
-    {
-      "source": "/portfolio/v-capital-portfolio",
-      "destination": "/portfolio/v-capital-portfolio.html"
-    },
-    {
-      "source": "/zones/arabian-ranches-1",
-      "destination": "/zones/arabian-ranches-1.html"
-    },
-    {
-      "source": "/zones/arabian-ranches-2",
-      "destination": "/zones/arabian-ranches-2.html"
-    },
-    {
-      "source": "/zones/arabian-ranches-3",
-      "destination": "/zones/arabian-ranches-3.html"
-    },
-    {
-      "source": "/zones/district-one",
-      "destination": "/zones/district-one.html"
-    },
-    {
-      "source": "/zones/grand-polo-club",
-      "destination": "/zones/grand-polo-club.html"
-    },
-    {
-      "source": "/zones/the-heights",
-      "destination": "/zones/the-heights.html"
-    },
-    {
-      "source": "/zones/the-oasis",
-      "destination": "/zones/the-oasis.html"
-    },
-    {
-      "source": "/zones/tilal-al-ghaf",
-      "destination": "/zones/tilal-al-ghaf.html"
-    },
-    {
-      "source": "/zones/damac-hills-2",
-      "destination": "/zones/damac-hills-2.html"
-    },
-    {
-      "source": "/zones/damac-lagoons",
-      "destination": "/zones/damac-lagoons.html"
-    },
-    {
-      "source": "/zones/damac-riverside",
-      "destination": "/zones/damac-riverside.html"
-    },
-    {
-      "source": "/zones/district-one-west",
-      "destination": "/zones/district-one-west.html"
-    },
-    {
-      "source": "/zones/dubai-islands",
-      "destination": "/zones/dubai-islands.html"
-    },
-    {
-      "source": "/zones/jumeirah-park",
-      "destination": "/zones/jumeirah-park.html"
-    },
-    {
-      "source": "/zones/nad-al-sheba",
-      "destination": "/zones/nad-al-sheba.html"
-    },
-    {
-      "source": "/zones/pearl-jumeirah",
-      "destination": "/zones/pearl-jumeirah.html"
-    },
-    {
-      "source": "/zones/sports-city",
-      "destination": "/zones/sports-city.html"
-    },
-    {
-      "source": "/zones/creek-harbour",
-      "destination": "/zones/creek-harbour.html"
-    },
-    {
-      "source": "/research/metro-gold-line",
-      "destination": "/research/metro-gold-line.html"
-    },
-    {
-      "source": "/research/visa-rules",
-      "destination": "/research/visa-rules.html"
-    },
-    {
-      "source": "/capital-structuring/10m",
-      "destination": "/capital-structuring/capital-structuring-10m.html"
-    },
-    {
-      "source": "/capital-structuring/20m",
-      "destination": "/capital-structuring/capital-structuring-20m.html"
-    },
-    {
-      "source": "/capital-structuring/50m",
-      "destination": "/capital-structuring/capital-structuring-50m.html"
-    },
-    {
-      "source": "/capital-structuring/100m",
-      "destination": "/capital-structuring/capital-structuring-100m.html"
-    },
-    {
-      "source": "/communities",
-      "destination": "/"
-    },
-    {
-      "source": "/insights",
-      "destination": "/newsroom"
-    },
-    {
-      "source": "/research",
-      "destination": "/research/index.html"
-    },
-    {
-      "source": "/research/how-oil-prices-influence-dubai-real-estate",
-      "destination": "/research/how-oil-prices-influence-dubai-real-estate.html"
-    },
-    {
-      "source": "/research/interest-rates-impact-dubai-property-prices",
-      "destination": "/research/interest-rates-impact-dubai-property-prices.html"
-    },
-    {
-      "source": "/research/population-growth-housing-demand-dubai",
-      "destination": "/research/population-growth-housing-demand-dubai.html"
-    },
-    {
-      "source": "/research/uae-immigration-trends-housing-dubai",
-      "destination": "/research/uae-immigration-trends-housing-dubai.html"
-    },
-    {
-      "source": "/research/peace-agreements-investor-sentiment-dubai-real-estate",
-      "destination": "/research/peace-agreements-investor-sentiment-dubai-real-estate.html"
-    },
-    {
-      "source": "/research/dollar-strength-gcc-real-estate",
-      "destination": "/research/dollar-strength-gcc-real-estate.html"
-    },
-    {
-      "source": "/research/global-liquidity-luxury-assets-dubai",
-      "destination": "/research/global-liquidity-luxury-assets-dubai.html"
-    },
-    {
-      "source": "/research/impact-geopolitics-dubai-property",
-      "destination": "/research/impact-geopolitics-dubai-property.html"
-    },
-    {
-      "source": "/research/why-global-capital-flowing-into-dubai-real-estate",
-      "destination": "/research/why-global-capital-flowing-into-dubai-real-estate.html"
-    },
-    {
-      "source": "/research/future-dubai-real-estate-2035",
-      "destination": "/research/future-dubai-real-estate-2035.html"
-    }
-  ],
   "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        }
+      ]
+    },
     {
       "source": "/assets/fonts/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         }
       ]
     },
@@ -454,20 +62,29 @@
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400"
+          "value": "public, max-age=86400, stale-while-revalidate=3600"
         }
       ]
     },
     {
-      "source": "/data/(.*)\\.json",
+      "source": "/(.*\\.(css|js))",
       "headers": [
         {
-          "key": "Content-Type",
-          "value": "application/json"
-        },
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/data/(.*)",
+      "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=3600"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
         }
       ]
     },
@@ -476,7 +93,24 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/xml"
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
         }
       ]
     },
@@ -485,9 +119,543 @@
       "headers": [
         {
           "key": "Content-Type",
-          "value": "application/manifest+json"
+          "value": "application/manifest+json; charset=utf-8"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/how-we-work",
+      "destination": "/how-we-work.html"
+    },
+    {
+      "source": "/dubai-buying-process",
+      "destination": "/how-we-work.html"
+    },
+    {
+      "source": "/why-advisor",
+      "destination": "/why-advisor.html"
+    },
+    {
+      "source": "/risks",
+      "destination": "/risks.html"
+    },
+    {
+      "source": "/market-comparison",
+      "destination": "/market-comparison.html"
+    },
+    {
+      "source": "/investment-guide",
+      "destination": "/investment-guide.html"
+    },
+    {
+      "source": "/research-methodology",
+      "destination": "/research-methodology.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/disclaimer",
+      "destination": "/disclaimer.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/newsroom",
+      "destination": "/newsroom.html"
+    },
+    {
+      "source": "/newsroom-march-2026",
+      "destination": "/newsroom-march-2026.html"
+    },
+    {
+      "source": "/newsroom-april-2026",
+      "destination": "/newsroom-april-2026.html"
+    },
+    {
+      "source": "/newsroom-june-2026",
+      "destination": "/newsroom-june-2026.html"
+    },
+    {
+      "source": "/newsroom-hormuz-effect",
+      "destination": "/newsroom-hormuz-effect.html"
+    },
+    {
+      "source": "/newsroom/march-2026",
+      "destination": "/newsroom-march-2026.html"
+    },
+    {
+      "source": "/newsroom/april-2026",
+      "destination": "/newsroom-april-2026.html"
+    },
+    {
+      "source": "/newsroom/june-2026",
+      "destination": "/newsroom-june-2026.html"
+    },
+    {
+      "source": "/newsroom/hormuz-effect",
+      "destination": "/newsroom-hormuz-effect.html"
+    },
+    {
+      "source": "/palm-jumeirah-investment",
+      "destination": "/palm-jumeirah-investment.html"
+    },
+    {
+      "source": "/palm-jebel-ali-investment",
+      "destination": "/palm-jebel-ali-investment.html"
+    },
+    {
+      "source": "/pearl-jumeirah-investment",
+      "destination": "/pearl-jumeirah-investment.html"
+    },
+    {
+      "source": "/jumeirah-bay-island-investment",
+      "destination": "/jumeirah-bay-island-investment.html"
+    },
+    {
+      "source": "/jumeirah-park-investment",
+      "destination": "/jumeirah-park-investment.html"
+    },
+    {
+      "source": "/emirates-hills-investment",
+      "destination": "/emirates-hills-investment.html"
+    },
+    {
+      "source": "/district-one-investment",
+      "destination": "/district-one-investment.html"
+    },
+    {
+      "source": "/district-one-west-investment",
+      "destination": "/district-one-west-investment.html"
+    },
+    {
+      "source": "/grand-polo-club-investment",
+      "destination": "/grand-polo-club-investment.html"
+    },
+    {
+      "source": "/bluewaters-island-investment",
+      "destination": "/bluewaters-island-investment.html"
+    },
+    {
+      "source": "/dubai-islands-investment",
+      "destination": "/dubai-islands-investment.html"
+    },
+    {
+      "source": "/dubai-marina-investment",
+      "destination": "/dubai-marina-investment.html"
+    },
+    {
+      "source": "/dubai-creek-harbour-investment",
+      "destination": "/dubai-creek-harbour-investment.html"
+    },
+    {
+      "source": "/dubai-hills-estate-investment",
+      "destination": "/dubai-hills-estate-investment.html"
+    },
+    {
+      "source": "/dubai-south-investment",
+      "destination": "/dubai-south-investment.html"
+    },
+    {
+      "source": "/business-bay-investment",
+      "destination": "/business-bay-investment.html"
+    },
+    {
+      "source": "/jvc-investment",
+      "destination": "/jvc-investment.html"
+    },
+    {
+      "source": "/sports-city-investment",
+      "destination": "/sports-city-investment.html"
+    },
+    {
+      "source": "/motor-city-investment",
+      "destination": "/motor-city-investment.html"
+    },
+    {
+      "source": "/furjan-investment",
+      "destination": "/furjan-investment.html"
+    },
+    {
+      "source": "/arjan-investment",
+      "destination": "/arjan-investment.html"
+    },
+    {
+      "source": "/nad-al-sheba-gardens-investment",
+      "destination": "/nad-al-sheba-gardens-investment.html"
+    },
+    {
+      "source": "/sobha-hartland-investment",
+      "destination": "/sobha-hartland-investment.html"
+    },
+    {
+      "source": "/tilal-al-ghaf-investment",
+      "destination": "/tilal-al-ghaf-investment.html"
+    },
+    {
+      "source": "/arabian-ranches-1-investment",
+      "destination": "/arabian-ranches-1-investment.html"
+    },
+    {
+      "source": "/arabian-ranches-2-investment",
+      "destination": "/arabian-ranches-2-investment.html"
+    },
+    {
+      "source": "/arabian-ranches-3-investment",
+      "destination": "/arabian-ranches-3-investment.html"
+    },
+    {
+      "source": "/damac-hills-investment",
+      "destination": "/damac-hills-investment.html"
+    },
+    {
+      "source": "/damac-hills-2-investment",
+      "destination": "/damac-hills-2-investment.html"
+    },
+    {
+      "source": "/damac-lagoons-investment",
+      "destination": "/damac-lagoons-investment.html"
+    },
+    {
+      "source": "/damac-riverside-investment",
+      "destination": "/damac-riverside-investment.html"
+    },
+    {
+      "source": "/the-heights-emaar-investment",
+      "destination": "/the-heights-emaar-investment.html"
+    },
+    {
+      "source": "/the-oasis-emaar-investment",
+      "destination": "/the-oasis-emaar-investment.html"
+    },
+    {
+      "source": "/silicon-oasis-investment",
+      "destination": "/silicon-oasis-investment.html"
+    },
+    {
+      "source": "/palm-jumeirah",
+      "destination": "/palm-jumeirah-investment.html"
+    },
+    {
+      "source": "/palm-jebel-ali",
+      "destination": "/palm-jebel-ali-investment.html"
+    },
+    {
+      "source": "/pearl-jumeirah",
+      "destination": "/pearl-jumeirah-investment.html"
+    },
+    {
+      "source": "/jumeirah-bay-island",
+      "destination": "/jumeirah-bay-island-investment.html"
+    },
+    {
+      "source": "/jumeirah-park",
+      "destination": "/jumeirah-park-investment.html"
+    },
+    {
+      "source": "/emirates-hills",
+      "destination": "/emirates-hills-investment.html"
+    },
+    {
+      "source": "/district-one",
+      "destination": "/district-one-investment.html"
+    },
+    {
+      "source": "/district-one-west",
+      "destination": "/district-one-west-investment.html"
+    },
+    {
+      "source": "/grand-polo-club",
+      "destination": "/grand-polo-club-investment.html"
+    },
+    {
+      "source": "/bluewaters",
+      "destination": "/bluewaters-island-investment.html"
+    },
+    {
+      "source": "/dubai-islands",
+      "destination": "/dubai-islands-investment.html"
+    },
+    {
+      "source": "/dubai-marina",
+      "destination": "/dubai-marina-investment.html"
+    },
+    {
+      "source": "/creek-harbour",
+      "destination": "/dubai-creek-harbour-investment.html"
+    },
+    {
+      "source": "/dubai-hills-estate",
+      "destination": "/dubai-hills-estate-investment.html"
+    },
+    {
+      "source": "/dubai-south",
+      "destination": "/dubai-south-investment.html"
+    },
+    {
+      "source": "/business-bay",
+      "destination": "/business-bay-investment.html"
+    },
+    {
+      "source": "/jvc",
+      "destination": "/jvc-investment.html"
+    },
+    {
+      "source": "/sports-city",
+      "destination": "/sports-city-investment.html"
+    },
+    {
+      "source": "/motor-city",
+      "destination": "/motor-city-investment.html"
+    },
+    {
+      "source": "/al-furjan",
+      "destination": "/furjan-investment.html"
+    },
+    {
+      "source": "/arjan",
+      "destination": "/arjan-investment.html"
+    },
+    {
+      "source": "/nad-al-sheba",
+      "destination": "/nad-al-sheba-gardens-investment.html"
+    },
+    {
+      "source": "/sobha-hartland",
+      "destination": "/sobha-hartland-investment.html"
+    },
+    {
+      "source": "/tilal-al-ghaf",
+      "destination": "/tilal-al-ghaf-investment.html"
+    },
+    {
+      "source": "/arabian-ranches-1",
+      "destination": "/arabian-ranches-1-investment.html"
+    },
+    {
+      "source": "/arabian-ranches-2",
+      "destination": "/arabian-ranches-2-investment.html"
+    },
+    {
+      "source": "/arabian-ranches-3",
+      "destination": "/arabian-ranches-3-investment.html"
+    },
+    {
+      "source": "/damac-hills",
+      "destination": "/damac-hills-investment.html"
+    },
+    {
+      "source": "/damac-hills-2",
+      "destination": "/damac-hills-2-investment.html"
+    },
+    {
+      "source": "/damac-lagoons",
+      "destination": "/damac-lagoons-investment.html"
+    },
+    {
+      "source": "/damac-riverside",
+      "destination": "/damac-riverside-investment.html"
+    },
+    {
+      "source": "/the-heights",
+      "destination": "/the-heights-emaar-investment.html"
+    },
+    {
+      "source": "/the-oasis",
+      "destination": "/the-oasis-emaar-investment.html"
+    },
+    {
+      "source": "/silicon-oasis",
+      "destination": "/silicon-oasis-investment.html"
+    },
+    {
+      "source": "/zones/palm-jumeirah",
+      "destination": "/palm-jumeirah-investment.html"
+    },
+    {
+      "source": "/zones/palm-jebel-ali",
+      "destination": "/palm-jebel-ali-investment.html"
+    },
+    {
+      "source": "/zones/jvc",
+      "destination": "/jvc-investment.html"
+    },
+    {
+      "source": "/zones/business-bay",
+      "destination": "/business-bay-investment.html"
+    },
+    {
+      "source": "/zones/dubai-marina",
+      "destination": "/dubai-marina-investment.html"
+    },
+    {
+      "source": "/zones/dubai-south",
+      "destination": "/dubai-south-investment.html"
+    },
+    {
+      "source": "/zones/creek-harbour",
+      "destination": "/dubai-creek-harbour-investment.html"
+    },
+    {
+      "source": "/zones/emirates-hills",
+      "destination": "/emirates-hills-investment.html"
+    },
+    {
+      "source": "/zones/dubai-hills-estate",
+      "destination": "/dubai-hills-estate-investment.html"
+    },
+    {
+      "source": "/zones/district-one",
+      "destination": "/district-one-investment.html"
+    },
+    {
+      "source": "/zones/tilal-al-ghaf",
+      "destination": "/tilal-al-ghaf-investment.html"
+    },
+    {
+      "source": "/zones/silicon-oasis",
+      "destination": "/silicon-oasis-investment.html"
+    },
+    {
+      "source": "/zones/sobha-hartland",
+      "destination": "/sobha-hartland-investment.html"
+    },
+    {
+      "source": "/zones/arabian-ranches-1",
+      "destination": "/arabian-ranches-1-investment.html"
+    },
+    {
+      "source": "/zones/arabian-ranches-2",
+      "destination": "/arabian-ranches-2-investment.html"
+    },
+    {
+      "source": "/zones/arabian-ranches-3",
+      "destination": "/arabian-ranches-3-investment.html"
+    },
+    {
+      "source": "/zones/damac-hills",
+      "destination": "/damac-hills-investment.html"
+    },
+    {
+      "source": "/zones/damac-hills-2",
+      "destination": "/damac-hills-2-investment.html"
+    },
+    {
+      "source": "/zones/damac-lagoons",
+      "destination": "/damac-lagoons-investment.html"
+    },
+    {
+      "source": "/zones/damac-riverside",
+      "destination": "/damac-riverside-investment.html"
+    },
+    {
+      "source": "/capital-structuring",
+      "destination": "/capital-structuring.html"
+    },
+    {
+      "source": "/capital-structuring/overview",
+      "destination": "/capital-structuring.html"
+    },
+    {
+      "source": "/capital-structuring/10m-20m",
+      "destination": "/capital-structuring--10m-20m.html"
+    },
+    {
+      "source": "/capital-structuring/20m-50m",
+      "destination": "/capital-structuring--20m-50m.html"
+    },
+    {
+      "source": "/capital-structuring/50m-100m",
+      "destination": "/capital-structuring--50m-100m.html"
+    },
+    {
+      "source": "/capital-structuring/100m-plus",
+      "destination": "/capital-structuring--100m-plus.html"
+    },
+    {
+      "source": "/capital-structuring/10m",
+      "destination": "/capital-structuring-10m.html"
+    },
+    {
+      "source": "/capital-structuring/20m",
+      "destination": "/capital-structuring-20m.html"
+    },
+    {
+      "source": "/capital-structuring/50m",
+      "destination": "/capital-structuring-50m.html"
+    },
+    {
+      "source": "/capital-structuring/100m",
+      "destination": "/capital-structuring-100m.html"
+    },
+    {
+      "source": "/projects/capital-structuring",
+      "destination": "/capital-structuring.html"
+    },
+    {
+      "source": "/projects/capital-structuring-10m",
+      "destination": "/capital-structuring-10m.html"
+    },
+    {
+      "source": "/projects/capital-structuring-20m",
+      "destination": "/capital-structuring-20m.html"
+    },
+    {
+      "source": "/projects/capital-structuring-50m",
+      "destination": "/capital-structuring-50m.html"
+    },
+    {
+      "source": "/projects/capital-structuring-100m",
+      "destination": "/capital-structuring-100m.html"
+    },
+    {
+      "source": "/dubai-south-upside-analysis",
+      "destination": "/dubai-south-upside-analysis.html"
+    },
+    {
+      "source": "/dubai-metro-gold-line-property-analysis",
+      "destination": "/dubai-metro-gold-line-property-analysis.html"
+    },
+    {
+      "source": "/uae-visa-rules-investment-guide",
+      "destination": "/uae-visa-rules-investment-guide.html"
+    },
+    {
+      "source": "/research/dubai-south-analysis",
+      "destination": "/dubai-south-upside-analysis.html"
+    },
+    {
+      "source": "/research/metro-gold-line",
+      "destination": "/dubai-metro-gold-line-property-analysis.html"
+    },
+    {
+      "source": "/research/visa-rules",
+      "destination": "/uae-visa-rules-investment-guide.html"
+    },
+    {
+      "source": "/v-capital-portfolio",
+      "destination": "/v-capital-portfolio.html"
+    },
+    {
+      "source": "/vikraant-parcha-portfolio",
+      "destination": "/vikraant-parcha-portfolio.html"
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/v-capital-portfolio.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/404.html"
     }
   ]
 }

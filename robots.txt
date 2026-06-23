@@ -1,3 +1,17 @@
 User-agent: *
 Allow: /
+
+Disallow: /api/
+Disallow: /OLD_ARCHIVE/
+Disallow: /*.py$
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://vcapital.ae/sitemap.xml
