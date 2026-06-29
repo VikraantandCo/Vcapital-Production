@@ -15,3 +15,6 @@ User-agent: PerplexityBot
 Allow: /
 
 Sitemap: https://vcapital.ae/sitemap.xml
+
+# AI Content Overview
+llms.txt: https://vcapital.ae/llms.txt

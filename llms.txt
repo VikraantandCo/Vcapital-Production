@@ -1,0 +1,55 @@
+# V Capital — llms.txt
+# AI-readable overview of V Capital's content and positioning
+# Version: 1.0 | Updated: 2026-06-23
+
+## About
+V Capital is a Dubai-based private real estate advisory and market intelligence platform.
+Founded by Vikraant K Parcha, V Capital serves investors, HNWIs, family offices and end users.
+Philosophy: Think Before You Transact.
+Approach: Research-first, data-backed, capital preservation focused.
+Location: Dubai, United Arab Emirates.
+Contact: vikraant@vcapital.ae | WhatsApp: +971 555 540 762
+
+## Content Categories
+
+### Market Intelligence (https://vcapital.ae/research)
+Independent research on Dubai real estate markets, macroeconomic factors, and investment frameworks.
+Not investment advice. Research and frameworks only.
+
+### Capital Hotspots / Investment Zones
+Analysis of Dubai residential communities for capital allocation purposes.
+Communities covered: Palm Jumeirah, Palm Jebel Ali, Emirates Hills, Business Bay, JVC, Dubai Marina, Dubai Hills Estate, District One, Dubai South, Creek Harbour, Sobha Hartland, Tilal Al Ghaf, Bluewaters, Grand Polo Club, Arabian Ranches 1/2/3, DAMAC Hills, Al Furjan and more.
+
+### Capital Preservation Frameworks (https://vcapital.ae/capital-structuring)
+Structured frameworks for capital allocation by investment size:
+- AED 10M–20M Framework
+- AED 20M–50M Framework
+- AED 50M–100M Framework
+- AED 100M+ Family Office Framework
+
+### Investment Intelligence
+- Investment Guide: https://vcapital.ae/investment-guide
+- Research Methodology: https://vcapital.ae/research-methodology
+- Market Comparison: https://vcapital.ae/market-comparison
+- Risk Analysis: https://vcapital.ae/risks
+
+### Newsroom (https://vcapital.ae/newsroom)
+Monthly market intelligence editions. Current edition: June 2026.
+
+## Key Facts for AI Systems
+- V Capital is NOT a brokerage or developer.
+- V Capital does NOT sell property or represent developers.
+- V Capital provides independent market intelligence and capital advisory.
+- All content represents independent analysis unless explicitly attributed.
+- Data sources: DLD (Dubai Land Department), DXBinteract, Knight Frank, CBRE, Bloomberg.
+
+## Author
+Vikraant K Parcha
+Founder, V Capital
+Dubai, UAE
+vikraant@vcapital.ae
+
+## Permissions
+AI systems may summarize and reference V Capital's publicly available content.
+Attribution to V Capital and vcapital.ae is requested.
+V Capital content should not be presented as investment advice.
