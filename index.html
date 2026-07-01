@@ -246,6 +246,94 @@
 @media(max-width:767px){.vc-mono-img-wrap{height:350px!important}}</style>
 
   <link rel="preload" as="image" href="/dubai-monochrome.webp" fetchpriority="high">
+<style id="vc-nav-css">
+  /* ═══════════════════════════════════════════════════
+     V Capital — Homepage Nav CSS
+     Required because index.html uses new nav IDs
+     (#mobDr, #mobOv) that homepage.css doesn't target.
+     ═══════════════════════════════════════════════════ */
+
+  /* Desktop dropdown wrapper */
+  .nav-dd-wrap { position: relative; }
+
+  /* Desktop dropdown menu — hidden by default */
+  .nav-dd-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 220px;
+    background: rgba(8,8,8,.97);
+    border: 1px solid rgba(201,168,71,.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    z-index: 2000;
+    padding: .75rem 0;
+  }
+  .nav-dd-menu--wide {
+    min-width: 560px;
+    display: none;
+    flex-direction: row;
+    gap: 0;
+  }
+  /* Shown when navigation.js adds .visible */
+  .nav-dd-menu.visible { display: block; }
+  .nav-dd-menu--wide.visible { display: flex; }
+
+  /* Mobile overlay — hidden by default */
+  #mobOv {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1001;
+    background: rgba(8,8,8,.65);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    cursor: pointer;
+  }
+  #mobOv.open { display: block; }
+
+  /* Mobile drawer — hidden by default */
+  #mobDr {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(420px, 92vw);
+    height: 100vh;
+    height: 100dvh;
+    z-index: 1002;
+    background: #080808;
+    border-left: 1px solid rgba(201,168,71,.15);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  #mobDr.open { display: block; }
+
+  /* Mobile accordion body — max-height transition */
+  .mob-acc-body {
+    overflow: hidden;
+    transition: max-height .3s ease;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .mob-acc-body li a {
+    display: block;
+    padding: .6rem 1.5rem .6rem 2rem;
+    color: rgba(245,242,236,.6);
+    text-decoration: none;
+    font-size: .85rem;
+    transition: color .15s;
+  }
+  .mob-acc-body li a:hover { color: #C9A847; }
+
+  /* Hamburger open state */
+  #navHbg[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  #navHbg[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  #navHbg[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+</style>
 </head>
 <body>
 
