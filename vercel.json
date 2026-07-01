@@ -32,7 +32,7 @@
       ]
     },
     {
-      "source": "/assets/fonts/*",
+      "source": "/assets/fonts/:file*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "source": "/fonts/*",
+      "source": "/fonts/:file*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "source": "/assets/*",
+      "source": "/assets/:file*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "source": "/styles/*",
+      "source": "/styles/:file*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "source": "/scripts/*",
+      "source": "/scripts/:file*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "source": "/data/*",
+      "source": "/data/:file*",
       "headers": [
         {
           "key": "Cache-Control",
