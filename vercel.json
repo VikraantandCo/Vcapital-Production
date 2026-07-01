@@ -120,6 +120,128 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/zones/arabian-ranches-1",
+      "destination": "/arabian-ranches-1",
+      "permanent": false
+    },
+    {
+      "source": "/zones/arabian-ranches-2",
+      "destination": "/arabian-ranches-2",
+      "permanent": false
+    },
+    {
+      "source": "/zones/arabian-ranches-3",
+      "destination": "/arabian-ranches-3",
+      "permanent": false
+    },
+    {
+      "source": "/zones/business-bay",
+      "destination": "/business-bay",
+      "permanent": false
+    },
+    {
+      "source": "/zones/creek-harbour",
+      "destination": "/creek-harbour",
+      "permanent": false
+    },
+    {
+      "source": "/zones/damac-hills",
+      "destination": "/damac-hills",
+      "permanent": false
+    },
+    {
+      "source": "/zones/damac-hills-2",
+      "destination": "/damac-hills-2",
+      "permanent": false
+    },
+    {
+      "source": "/zones/damac-lagoons",
+      "destination": "/damac-lagoons",
+      "permanent": false
+    },
+    {
+      "source": "/zones/damac-riverside",
+      "destination": "/damac-riverside",
+      "permanent": false
+    },
+    {
+      "source": "/zones/district-one",
+      "destination": "/district-one",
+      "permanent": false
+    },
+    {
+      "source": "/zones/dubai-hills-estate",
+      "destination": "/dubai-hills-estate",
+      "permanent": false
+    },
+    {
+      "source": "/zones/dubai-marina",
+      "destination": "/dubai-marina",
+      "permanent": false
+    },
+    {
+      "source": "/zones/dubai-south",
+      "destination": "/dubai-south",
+      "permanent": false
+    },
+    {
+      "source": "/zones/emirates-hills",
+      "destination": "/emirates-hills",
+      "permanent": false
+    },
+    {
+      "source": "/zones/jumeirah-bay",
+      "destination": "/jumeirah-bay-island",
+      "permanent": false
+    },
+    {
+      "source": "/zones/jvc",
+      "destination": "/jvc",
+      "permanent": false
+    },
+    {
+      "source": "/zones/palm-jebel-ali",
+      "destination": "/palm-jebel-ali",
+      "permanent": false
+    },
+    {
+      "source": "/zones/palm-jumeirah",
+      "destination": "/palm-jumeirah",
+      "permanent": false
+    },
+    {
+      "source": "/zones/silicon-oasis",
+      "destination": "/silicon-oasis",
+      "permanent": false
+    },
+    {
+      "source": "/zones/sobha-hartland",
+      "destination": "/sobha-hartland",
+      "permanent": false
+    },
+    {
+      "source": "/zones/tilal-al-ghaf",
+      "destination": "/tilal-al-ghaf",
+      "permanent": false
+    },
+    {
+      "source": "/dubai-south-upside-analysis",
+      "destination": "/research/dubai-south-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/dubai-metro-gold-line-property-analysis",
+      "destination": "/research/metro-gold-line",
+      "permanent": true
+    },
+    {
+      "source": "/uae-visa-rules-investment-guide",
+      "destination": "/research/visa-rules",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
@@ -474,86 +596,6 @@
       "destination": "/zones/silicon-oasis.html"
     },
     {
-      "source": "/zones/palm-jumeirah",
-      "destination": "/zones/palm-jumeirah.html"
-    },
-    {
-      "source": "/zones/palm-jebel-ali",
-      "destination": "/zones/palm-jebel-ali.html"
-    },
-    {
-      "source": "/zones/jvc",
-      "destination": "/zones/jvc.html"
-    },
-    {
-      "source": "/zones/business-bay",
-      "destination": "/zones/business-bay.html"
-    },
-    {
-      "source": "/zones/dubai-marina",
-      "destination": "/zones/dubai-marina.html"
-    },
-    {
-      "source": "/zones/dubai-south",
-      "destination": "/zones/dubai-south.html"
-    },
-    {
-      "source": "/zones/creek-harbour",
-      "destination": "/zones/creek-harbour.html"
-    },
-    {
-      "source": "/zones/emirates-hills",
-      "destination": "/zones/emirates-hills.html"
-    },
-    {
-      "source": "/zones/dubai-hills-estate",
-      "destination": "/zones/dubai-hills-estate.html"
-    },
-    {
-      "source": "/zones/district-one",
-      "destination": "/zones/district-one.html"
-    },
-    {
-      "source": "/zones/tilal-al-ghaf",
-      "destination": "/zones/tilal-al-ghaf.html"
-    },
-    {
-      "source": "/zones/silicon-oasis",
-      "destination": "/zones/silicon-oasis.html"
-    },
-    {
-      "source": "/zones/sobha-hartland",
-      "destination": "/zones/sobha-hartland.html"
-    },
-    {
-      "source": "/zones/arabian-ranches-1",
-      "destination": "/zones/arabian-ranches-1.html"
-    },
-    {
-      "source": "/zones/arabian-ranches-2",
-      "destination": "/zones/arabian-ranches-2.html"
-    },
-    {
-      "source": "/zones/arabian-ranches-3",
-      "destination": "/zones/arabian-ranches-3.html"
-    },
-    {
-      "source": "/zones/damac-hills",
-      "destination": "/zones/damac-hills.html"
-    },
-    {
-      "source": "/zones/damac-hills-2",
-      "destination": "/zones/damac-hills-2.html"
-    },
-    {
-      "source": "/zones/damac-lagoons",
-      "destination": "/zones/damac-lagoons.html"
-    },
-    {
-      "source": "/zones/damac-riverside",
-      "destination": "/zones/damac-riverside.html"
-    },
-    {
       "source": "/capital-structuring",
       "destination": "/capital-structuring/capital-structuring-overview.html"
     },
@@ -614,18 +656,6 @@
       "destination": "/capital-structuring/capital-structuring-100m.html"
     },
     {
-      "source": "/dubai-south-upside-analysis",
-      "destination": "/research/dubai-south-analysis.html"
-    },
-    {
-      "source": "/dubai-metro-gold-line-property-analysis",
-      "destination": "/research/metro-gold-line.html"
-    },
-    {
-      "source": "/uae-visa-rules-investment-guide",
-      "destination": "/research/visa-rules.html"
-    },
-    {
       "source": "/research/dubai-south-analysis",
       "destination": "/research/dubai-south-analysis.html"
     },
@@ -648,10 +678,6 @@
     {
       "source": "/portfolio",
       "destination": "/portfolio/v-capital-portfolio.html"
-    },
-    {
-      "source": "/zones/jumeirah-bay",
-      "destination": "/zones/jumeirah-bay.html"
     },
     {
       "source": "/research/dollar-strength-gcc-real-estate",
