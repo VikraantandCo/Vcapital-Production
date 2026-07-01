@@ -3,21 +3,21 @@
    Page-specific styles for index.html
    Depends on: /styles/global.css (must load first)
    Fonts: all @font-face declarations preserved here
-          paths updated to: ../assets/fonts/
+          paths updated to: ../fonts/
    DO NOT duplicate variables defined in global.css.
    ═══════════════════════════════════════════════════════════ */
 
-@font-face{font-family:'Cormorant Garamond';src:url('/assets/fonts/cormorant-garamond-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:'Cormorant Garamond';src:url('/assets/fonts/cormorant-garamond-300italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
-@font-face{font-family:'Cormorant Garamond';src:url('/assets/fonts/cormorant-garamond-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'Cormorant Garamond';src:url('/assets/fonts/cormorant-garamond-400italic.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
-@font-face{font-family:'Cormorant Garamond';src:url('/assets/fonts/cormorant-garamond-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:'Cormorant Garamond';src:url('/assets/fonts/cormorant-garamond-500italic.woff2') format('woff2');font-weight:500;font-style:italic;font-display:swap}
-@font-face{font-family:'DM Sans';src:url('/assets/fonts/dm-sans-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:'DM Sans';src:url('/assets/fonts/dm-sans-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:'DM Sans';src:url('/assets/fonts/dm-sans-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
-@font-face{font-family:'DM Mono';src:url('/assets/fonts/dm-mono-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:'DM Mono';src:url('/assets/fonts/dm-mono-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-300italic.woff2') format('woff2');font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-400italic.woff2') format('woff2');font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'Cormorant Garamond';src:url('/fonts/cormorant-garamond-500italic.woff2') format('woff2');font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('/fonts/dm-sans-500.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Mono';src:url('/fonts/dm-mono-300.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:'DM Mono';src:url('/fonts/dm-mono-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 
 :root {
   --gold: #C9A847;
