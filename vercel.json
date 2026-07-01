@@ -475,83 +475,83 @@
     },
     {
       "source": "/zones/palm-jumeirah",
-      "destination": "/palm-jumeirah-investment.html"
+      "destination": "/zones/palm-jumeirah.html"
     },
     {
       "source": "/zones/palm-jebel-ali",
-      "destination": "/palm-jebel-ali-investment.html"
+      "destination": "/zones/palm-jebel-ali.html"
     },
     {
       "source": "/zones/jvc",
-      "destination": "/jvc-investment.html"
+      "destination": "/zones/jvc.html"
     },
     {
       "source": "/zones/business-bay",
-      "destination": "/business-bay-investment.html"
+      "destination": "/zones/business-bay.html"
     },
     {
       "source": "/zones/dubai-marina",
-      "destination": "/dubai-marina-investment.html"
+      "destination": "/zones/dubai-marina.html"
     },
     {
       "source": "/zones/dubai-south",
-      "destination": "/dubai-south-investment.html"
+      "destination": "/zones/dubai-south.html"
     },
     {
       "source": "/zones/creek-harbour",
-      "destination": "/dubai-creek-harbour-investment.html"
+      "destination": "/zones/creek-harbour.html"
     },
     {
       "source": "/zones/emirates-hills",
-      "destination": "/emirates-hills-investment.html"
+      "destination": "/zones/emirates-hills.html"
     },
     {
       "source": "/zones/dubai-hills-estate",
-      "destination": "/dubai-hills-estate-investment.html"
+      "destination": "/zones/dubai-hills-estate.html"
     },
     {
       "source": "/zones/district-one",
-      "destination": "/district-one-investment.html"
+      "destination": "/zones/district-one.html"
     },
     {
       "source": "/zones/tilal-al-ghaf",
-      "destination": "/tilal-al-ghaf-investment.html"
+      "destination": "/zones/tilal-al-ghaf.html"
     },
     {
       "source": "/zones/silicon-oasis",
-      "destination": "/silicon-oasis-investment.html"
+      "destination": "/zones/silicon-oasis.html"
     },
     {
       "source": "/zones/sobha-hartland",
-      "destination": "/sobha-hartland-investment.html"
+      "destination": "/zones/sobha-hartland.html"
     },
     {
       "source": "/zones/arabian-ranches-1",
-      "destination": "/arabian-ranches-1-investment.html"
+      "destination": "/zones/arabian-ranches-1.html"
     },
     {
       "source": "/zones/arabian-ranches-2",
-      "destination": "/arabian-ranches-2-investment.html"
+      "destination": "/zones/arabian-ranches-2.html"
     },
     {
       "source": "/zones/arabian-ranches-3",
-      "destination": "/arabian-ranches-3-investment.html"
+      "destination": "/zones/arabian-ranches-3.html"
     },
     {
       "source": "/zones/damac-hills",
-      "destination": "/damac-hills-investment.html"
+      "destination": "/zones/damac-hills.html"
     },
     {
       "source": "/zones/damac-hills-2",
-      "destination": "/damac-hills-2-investment.html"
+      "destination": "/zones/damac-hills-2.html"
     },
     {
       "source": "/zones/damac-lagoons",
-      "destination": "/damac-lagoons-investment.html"
+      "destination": "/zones/damac-lagoons.html"
     },
     {
       "source": "/zones/damac-riverside",
-      "destination": "/damac-riverside-investment.html"
+      "destination": "/zones/damac-riverside.html"
     },
     {
       "source": "/capital-structuring",
@@ -595,23 +595,23 @@
     },
     {
       "source": "/projects/capital-structuring",
-      "destination": "/capital-structuring.html"
+      "destination": "/capital-structuring/capital-structuring-overview.html"
     },
     {
       "source": "/projects/capital-structuring-10m",
-      "destination": "/capital-structuring-10m.html"
+      "destination": "/capital-structuring/capital-structuring-10m.html"
     },
     {
       "source": "/projects/capital-structuring-20m",
-      "destination": "/capital-structuring-20m.html"
+      "destination": "/capital-structuring/capital-structuring-20m.html"
     },
     {
       "source": "/projects/capital-structuring-50m",
-      "destination": "/capital-structuring-50m.html"
+      "destination": "/capital-structuring/capital-structuring-50m.html"
     },
     {
       "source": "/projects/capital-structuring-100m",
-      "destination": "/capital-structuring-100m.html"
+      "destination": "/capital-structuring/capital-structuring-100m.html"
     },
     {
       "source": "/dubai-south-upside-analysis",
@@ -639,15 +639,15 @@
     },
     {
       "source": "/v-capital-portfolio",
-      "destination": "/v-capital-portfolio.html"
+      "destination": "/portfolio/v-capital-portfolio.html"
     },
     {
       "source": "/vikraant-parcha-portfolio",
-      "destination": "/vikraant-parcha-portfolio.html"
+      "destination": "/portfolio/vikraant-parcha.html"
     },
     {
       "source": "/portfolio",
-      "destination": "/v-capital-portfolio.html"
+      "destination": "/portfolio/v-capital-portfolio.html"
     },
     {
       "source": "/zones/jumeirah-bay",
