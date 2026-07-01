@@ -93,3 +93,20 @@
   }, { passive: true });
 
 })();
+
+/* ── toggleNavDropdown — required by components/navbar.html ── */
+window.toggleNavDropdown = function (trigger, event) {
+  if (event) event.stopPropagation();
+  var item = trigger ? trigger.closest('.nav-dropdown') : null;
+  if (!item) return;
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
+    el.classList.remove('open');
+  });
+  if (!isOpen) { item.classList.add('open'); }
+};
+document.addEventListener('click', function () {
+  document.querySelectorAll('.nav-dropdown.open').forEach(function (el) {
+    el.classList.remove('open');
+  });
+});
