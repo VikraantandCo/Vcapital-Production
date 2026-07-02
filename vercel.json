@@ -1,5 +1,5 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "trailingSlash": false,
   "headers": [
     {
@@ -121,111 +121,6 @@
     }
   ],
   "redirects": [
-    {
-      "source": "/zones/arabian-ranches-1",
-      "destination": "/arabian-ranches-1",
-      "permanent": false
-    },
-    {
-      "source": "/zones/arabian-ranches-2",
-      "destination": "/arabian-ranches-2",
-      "permanent": false
-    },
-    {
-      "source": "/zones/arabian-ranches-3",
-      "destination": "/arabian-ranches-3",
-      "permanent": false
-    },
-    {
-      "source": "/zones/business-bay",
-      "destination": "/business-bay",
-      "permanent": false
-    },
-    {
-      "source": "/zones/creek-harbour",
-      "destination": "/creek-harbour",
-      "permanent": false
-    },
-    {
-      "source": "/zones/damac-hills",
-      "destination": "/damac-hills",
-      "permanent": false
-    },
-    {
-      "source": "/zones/damac-hills-2",
-      "destination": "/damac-hills-2",
-      "permanent": false
-    },
-    {
-      "source": "/zones/damac-lagoons",
-      "destination": "/damac-lagoons",
-      "permanent": false
-    },
-    {
-      "source": "/zones/damac-riverside",
-      "destination": "/damac-riverside",
-      "permanent": false
-    },
-    {
-      "source": "/zones/district-one",
-      "destination": "/district-one",
-      "permanent": false
-    },
-    {
-      "source": "/zones/dubai-hills-estate",
-      "destination": "/dubai-hills-estate",
-      "permanent": false
-    },
-    {
-      "source": "/zones/dubai-marina",
-      "destination": "/dubai-marina",
-      "permanent": false
-    },
-    {
-      "source": "/zones/dubai-south",
-      "destination": "/dubai-south",
-      "permanent": false
-    },
-    {
-      "source": "/zones/emirates-hills",
-      "destination": "/emirates-hills",
-      "permanent": false
-    },
-    {
-      "source": "/zones/jumeirah-bay",
-      "destination": "/jumeirah-bay-island",
-      "permanent": false
-    },
-    {
-      "source": "/zones/jvc",
-      "destination": "/jvc",
-      "permanent": false
-    },
-    {
-      "source": "/zones/palm-jebel-ali",
-      "destination": "/palm-jebel-ali",
-      "permanent": false
-    },
-    {
-      "source": "/zones/palm-jumeirah",
-      "destination": "/palm-jumeirah",
-      "permanent": false
-    },
-    {
-      "source": "/zones/silicon-oasis",
-      "destination": "/silicon-oasis",
-      "permanent": false
-    },
-    {
-      "source": "/zones/sobha-hartland",
-      "destination": "/sobha-hartland",
-      "permanent": false
-    },
-    {
-      "source": "/zones/tilal-al-ghaf",
-      "destination": "/tilal-al-ghaf",
-      "permanent": false
-    },
     {
       "source": "/dubai-south-upside-analysis",
       "destination": "/research/dubai-south-analysis",
